@@ -3,27 +3,59 @@
 <head>
   <meta charset="utf-8">
   
-  <title>引言 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>前后端分离方案 - spa | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
   <meta name="keywords" content="">
-  <meta name="description" content="建站的初衷,一来是想有个地方记录点点滴滴,二来有个地方可以发些牢骚,三来有事没事搞点玩意就可以往这上面丢,四来…">
+  <meta name="description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+项目划分：
+
+后端  提供数据接口服务
+前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
+
+前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="引言">
-<meta property="og:url" content="http://www.chihy.cc/2016/07/19/welcome/index.html">
+<meta property="og:title" content="前后端分离方案 - spa">
+<meta property="og:url" content="http://www.chihy.cc/2016/07/21/fe-spa/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="建站的初衷,一来是想有个地方记录点点滴滴,二来有个地方可以发些牢骚,三来有事没事搞点玩意就可以往这上面丢,四来…">
-<meta property="og:updated_time" content="2016-07-21T14:11:56.572Z">
+<meta property="og:description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+项目划分：
+
+后端  提供数据接口服务
+前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
+
+前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/spa-fe.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/spa-index.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/spa-list.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/nginx.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/spa-l.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/mock.png">
+<meta property="og:image" content="http://www.chihy.cc/images/fe/spa-tomcat.png">
+<meta property="og:updated_time" content="2016-07-23T03:41:09.875Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="引言">
-<meta name="twitter:description" content="建站的初衷,一来是想有个地方记录点点滴滴,二来有个地方可以发些牢骚,三来有事没事搞点玩意就可以往这上面丢,四来…">
+<meta name="twitter:title" content="前后端分离方案 - spa">
+<meta name="twitter:description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+项目划分：
+
+后端  提供数据接口服务
+前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
+
+前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
+<meta name="twitter:image" content="http://www.chihy.cc/images/fe/spa-fe.png">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;建站的初衷,一来是想有个地方记录点点滴滴,二来有个地方可以发些牢骚,三来有事没事搞点玩意就可以往这上面丢,四来…&lt;br&gt;">
+  <meta name="summary" content="&lt;p&gt;这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。&lt;br&gt;既然是单页应用，前端入口只有一个&lt;code&gt;html&lt;/code&gt;以及若干&lt;code&gt;js&lt;/code&gt;和&lt;code&gt;css&lt;/code&gt;资源文件。&lt;/p&gt;
+&lt;p&gt;项目划分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;后端&lt;br&gt;  &lt;em&gt;提供数据接口服务&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;前端&lt;br&gt;  &lt;em&gt;&lt;code&gt;html&lt;/code&gt; 入口&lt;/em&gt;&lt;br&gt;  &lt;em&gt;&lt;code&gt;js&lt;/code&gt; 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信&lt;/em&gt;&lt;br&gt;  &lt;em&gt;&lt;code&gt;css&lt;/code&gt; 控制页面样式&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前端与后端的通信主要通过&lt;code&gt;ajax&lt;/code&gt;，下面是一个简单的项目结构（前端代码）&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -87,7 +119,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">引言</div>
+        <div class="flex-col header-title ellipsis">前后端分离方案 - spa</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -108,11 +140,11 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">引言</h1>
+    <h1 class="author">前后端分离方案 - spa</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-07-19T06:17:22.000Z" itemprop="datePublished" class="page-time">
-  2016-07-19
+            <time datetime="2016-07-21T14:28:38.000Z" itemprop="datePublished" class="page-time">
+  2016-07-21
 </time>
 
 
@@ -122,7 +154,7 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-welcome" 
+      <article id="post-fe-spa" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meat flex-row">
         
@@ -179,14 +211,40 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>建站的初衷,一来是想有个地方记录点点滴滴,二来有个地方可以发些牢骚,三来有事没事搞点玩意就可以往这上面丢,四来…<br><a id="more"></a></p>
-<p>建站这个想法是已经有了十几年了,一直到现在才开始有所行动,不得不说是懒得可以啊<br>初中,高中忙于学习,一有空就是玩了,还建站?又没钱,玩毛!!!</p>
-<p>大学考了个不上不下的大学,搞了个偏硬件的学科,填志愿时候么,就是看,电子,微电子,高大上啊,就选了,然后后来才发现,对硬件的兴趣真是一毛钱都没有,那时候学了c语言,一下子就喜欢上了编程,从此踏上码农不归路</p>
+            <p>这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。<br>既然是单页应用，前端入口只有一个<code>html</code>以及若干<code>js</code>和<code>css</code>资源文件。</p>
+<p>项目划分：</p>
+<ul>
+<li>后端<br>  <em>提供数据接口服务</em></li>
+<li>前端<br>  <em><code>html</code> 入口</em><br>  <em><code>js</code> 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信</em><br>  <em><code>css</code> 控制页面样式</em></li>
+</ul>
+<p>前端与后端的通信主要通过<code>ajax</code>，下面是一个简单的项目结构（前端代码）<br><a id="more"></a><br><img src="/images/fe/spa-fe.png" alt=""></p>
+<ul>
+<li><code>index.html</code> 是我们spa的入口文件</li>
+<li><code>static</code>文件夹下面是我们的静态资源文件，像<code>js</code>，<code>css</code>，<code>图片</code>等</li>
+</ul>
+<p>因为是<code>spa</code>，所以页面的路由掌控在我们前端自己的手里，后端为我们提供的只是一个个数据接口的服务，所以只要我们能够自己模拟实现这个数据接口，我们就可以完全脱离后端去开发。<br>首先，我们先不依托于数据接口，先把页面展示，逻辑都跑起来。这个就比较简单了，我们把前端代码随便丢到一个服务器容器里面就可以，比如nodejs，tomcat，nginx等。这里我比较推荐nginx，下面我也会使用nginx作为服务器。</p>
+<p>这里是我写的一个简单的spa的例子(对于spa的实现，这里不做讨论)，跑起来就是这样<br><img src="/images/fe/spa-index.png" alt=""><img src="/images/fe/spa-list.png" alt=""><br>恩，不需要数据接口的情况下，我们已经可以正常使用了，但这并不是我们想要的，我们想要和后端通信通信。<br>当然实现的方法有很多，比如</p>
+<ol>
+<li>http做代理比如用Fiddler</li>
+<li>服务器实现一套数据模拟接口</li>
+<li>如果后端已经存在的接口，只需要配置一个反向代理</li>
+<li><a href="http://mockjs.com/" target="_blank" rel="external">mockjs</a></li>
+</ol>
+<p>前面几点可能会稍微复杂一点，下面是一个简单的nginx的配置<br>(hosts绑定 <code>127.0.0.1 www.spa.com</code>)<br><img src="/images/fe/nginx.png" alt=""><img src="/images/fe/spa-l.png" alt=""><br>关于nginx的使用和配置，后续会单独开一篇文章<br>也可以采用<code>4</code>比较简便，像下面这样，更复杂的配置可以参考<a href="http://mockjs.com/examples.html" target="_blank" rel="external">官网的文档</a><br><img src="/images/fe/mock.png" alt=""></p>
+<p>开发完成后，如果只用一个tomcat那只要把前端的代码丢到项目相应的目录即可，比如<br><img src="/images/fe/spa-tomcat.png" alt=""><br><code>src</code>为后端的代码，我们只需要把我们前端的代码丢到<code>webContent</code>下即可。</p>
+<p>如果是nginx那就更加方便了，把前端代码丢到目录<code>web</code>下，在nginx里配置静态资源（<code>html</code>，<code>js</code>，<code>css</code>）指向<code>web</code>目录，接口代理到后端的服务，甚至连发布都可以是单独的，配置和上面的nginx相类似。</p>
+<p>当然spa有它的优缺点：</p>
+<ul>
+<li>因为是单页所以第一次打开的时候需要加载的资源比较多（这个也可以通过其他手段优化，比如资源懒加载 按需加载等），第一个页面会比较慢，但是之后用户体验较好</li>
+<li>页面全是通过js去控制路由，渲染，所以不支持SEO（解决方法也有很多，比如单独放一套供SEO使用的页面快照）</li>
+<li>对服务器的压力会比较小</li>
+<li>由于业务逻辑都在js，所以对开发人员的js要求会稍微高点</li>
+</ul>
 
             <blockquote>
                 <p>
                 本文地址：
-                <a href="http://www.chihy.cc/2016/07/19/welcome/" target="_blank" rel="external">http://www.chihy.cc/2016/07/19/welcome/</a>
+                <a href="http://www.chihy.cc/2016/07/21/fe-spa/" target="_blank" rel="external">http://www.chihy.cc/2016/07/21/fe-spa/</a>
                 </p>
                 <footer><cite><a href="http://www.chihy.cc">@沉淀 - chihysoa的网站</a></cite></footer>
             </blockquote>
@@ -195,13 +253,20 @@
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/2016/07/20/git/" id="post-prev" class="post-nav-link">
+      <a href="/2016/08/03/fe-node/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">项目版本管理 - git基本操作</h4>
+        <h4 class="title">前后端分离方案 - NodeJs</h4>
       </a>
     </div>
   
 
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/07/21/fe/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">前后端分离方案</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -210,7 +275,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="welcome" data-title="引言" data-url="http://www.chihy.cc/2016/07/19/welcome/index.html"></div>
+	<div class="ds-thread" data-thread-key="fe-spa" data-title="前后端分离方案 - spa" data-url="http://www.chihy.cc/2016/07/21/fe-spa/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -241,10 +306,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "引言",
+    title: "前后端分离方案 - spa",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "http://www.chihy.cc/2016/07/19/welcome/index.html"
+    url: "http://www.chihy.cc/2016/07/21/fe-spa/index.html"
 };
 </script>
 <div class="global-share" id="global-share">
