@@ -1,0 +1,376 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
+  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
+<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  
+    <title>js继承 | 沉淀 - chihysoa的网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="chihysoa">
+    
+    <meta name="description" content="js也是一种面向对象的语言，既然是对象那就有继承的概念，由于js是一种弱语言，所以她的继承也是一种弱继承。js实现继承的方式有很多种，比如通过构造函数，通过原型等方式。">
+    
+    <meta name="keywords" content="javascript,原型,原型链,继承,面向对象,构造函数,寄生,组合继承">
+    
+    
+    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+     
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
+				<a class="blog-motto">萍水相逢</a>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+				</ul>
+                            </nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/09/07/extends/" title="js继承" itemprop="url">js继承</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-09-07T05:28:38.000Z" itemprop="datePublished">2016-09-07</time>
+    更新日期:<time datetime="2016-09-07T07:02:21.019Z" itemprop="dateModified">2016-09-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#构造函数继承-call-apply"><span class="toc-number">1.</span> <span class="toc-text">构造函数继承(call/apply)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原型链继承"><span class="toc-number">2.</span> <span class="toc-text">原型链继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#组合模式"><span class="toc-number">3.</span> <span class="toc-text">组合模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原型继承"><span class="toc-number">4.</span> <span class="toc-text">原型继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#寄生继承"><span class="toc-number">5.</span> <span class="toc-text">寄生继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#寄生组合继承"><span class="toc-number">6.</span> <span class="toc-text">寄生组合继承</span></a></li></ol>
+		</div>
+		
+		<p><code>js</code>也是一种面向对象的语言，既然是对象那就有继承的概念，由于<code>js</code>是一种弱语言，所以她的继承也是一种弱继承。<br><code>js</code>实现继承的方式有很多种，比如通过构造函数，通过原型等方式。</p>
+<a id="more"></a>
+<h1 id="构造函数继承-call-apply"><a href="#构造函数继承-call-apply" class="headerlink" title="构造函数继承(call/apply)"></a>构造函数继承(call/apply)</h1><p>定义三个类，js里面类也用function来声明</p>
+<p>动物<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function Animal()&#123;</div><div class="line">    this.move = function()&#123;</div><div class="line">        console.log(&apos;move&apos;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>宠物<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function Pet(name,legs = 4)&#123;</div><div class="line">    Animal.call(this);</div><div class="line">    this.legs = legs;</div><div class="line">    this.name = name;</div><div class="line">    this.voice = &apos;&apos;;</div><div class="line">    this.talk = function()&#123;</div><div class="line">        console.log(this.voice);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>猫<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function Cat(name)&#123;</div><div class="line">    Pet.call(this,name);</div><div class="line">    this.voice = &apos;miao&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>狗<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function Dog(name)&#123;</div><div class="line">    Pet.call(this,name);</div><div class="line">    this.voice = &apos;wang&apos;;   </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>上面的四个类，通过构造函数，<code>Pet</code>继承<code>Animal</code>类，<code>Cat</code>和<code>Dog</code>继承了<code>Pet</code>类，接下来，我们创建<code>Cat</code>和<code>Dog</code>的实例，并读取实例的属性和方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">let cat = new Cat(&apos;tom&apos;);</div><div class="line">let dog = new Dog(&apos;jack&apos;);</div><div class="line"></div><div class="line">console.log(cat.legs);//4</div><div class="line">console.log(cat.name);//tom</div><div class="line">cat.move();//move</div><div class="line">cat.talk();//miao</div><div class="line"></div><div class="line">console.log(dog.legs);//4</div><div class="line">console.log(dog.name);//jack</div><div class="line">dog.move();//move</div><div class="line">dog.talk();//wang</div></pre></td></tr></table></figure></p>
+<p>从运行的代码可以看到，<code>dog</code>和<code>cat</code>的实例，它们又不同的<code>name</code>，具有相同的<code>legs</code>，它们都会<code>talk</code>，但是<code>talk</code>时会却不同的声音，并且它们都会<code>move</code></p>
+<h1 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h1><p>关于原型可以<a href="/2016/09/07/prototype/">参考这里–&gt;</a><br>直接上代码<br>动物<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function Animal()&#123;</div><div class="line">    this.move = function()&#123;</div><div class="line">        console.log(&apos;move&apos;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>宠物<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function Pet(name,legs = 4)&#123;</div><div class="line">    this.legs = legs;</div><div class="line">    this.name = name;</div><div class="line">    this.voice = &apos;&apos;;</div><div class="line">    this.talk = function()&#123;</div><div class="line">        console.log(this.voice);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>猫<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function Cat(name)&#123;</div><div class="line">    this.name = name;</div><div class="line">    this.voice = &apos;miao&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>狗<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function Dog(name)&#123;</div><div class="line">    this.name = name;</div><div class="line">    this.voice = &apos;wang&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>同样的定义四个类，和构造器继承不同的是，它们现在相互没有任何关系，不过马上它们就要发生关系了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function inherit(subClass,superClass)&#123;</div><div class="line">    subClass.prototype = new superClass();</div><div class="line">&#125;</div><div class="line">inherit(Pet,Animal);</div><div class="line">inherit(Cat,Pet);</div><div class="line">inherit(Dog,Pet);</div></pre></td></tr></table></figure></p>
+<p>我们定义了一个<code>inherit</code>方法，通过这个方法让上面的四个类发生了关系，改变<code>Pet</code>的原型为<code>Animal</code>的是个实例，<code>Cat</code>和<code>Dog</code>的原型则为<code>Pet</code>的一个实例。<br>到这里我们已经吧继承实现完毕了。我们验证一下，分别创建<code>Cat</code>和<code>Dog</code>的实现，读取它们的属性和方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">let cat = new Cat(&apos;tom&apos;);</div><div class="line">let dog = new Dog(&apos;jack&apos;);</div><div class="line"></div><div class="line">console.log(cat.legs);//4</div><div class="line">console.log(cat.name);//tom</div><div class="line">cat.move();//move</div><div class="line">cat.talk();//miao</div><div class="line"></div><div class="line">console.log(dog.legs);//4</div><div class="line">console.log(dog.name);//jack</div><div class="line">dog.move();//move</div><div class="line">dog.talk();//wang</div></pre></td></tr></table></figure></p>
+<h1 id="组合模式"><a href="#组合模式" class="headerlink" title="组合模式"></a>组合模式</h1><p>前面说到了两种继承方式，看上去两种都很完美，但是会存在问题。<br>用构造器继承<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">console.log(cat instanceof Cat);//true</div><div class="line">console.log(cat instanceof Pet);//false</div><div class="line">console.log(cat instanceof Animal);//false</div><div class="line"></div><div class="line">console.log(dog instanceof Dog);//true</div><div class="line">console.log(dog instanceof Pet);//false</div><div class="line">console.log(dog instanceof Animal);//false</div></pre></td></tr></table></figure></p>
+<p>我们创建出来的<code>cat</code>和<code>dog</code>通过<code>instanceof</code>检测<code>Pet</code>和<code>Animal</code>的实例时，返回的都是false，很明显这不是我们想要的</p>
+<p>再看看用原型方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">console.log(cat instanceof Cat);//true</div><div class="line">console.log(cat instanceof Pet);//true</div><div class="line">console.log(cat instanceof Animal);//true</div><div class="line"></div><div class="line">console.log(dog instanceof Dog);//true</div><div class="line">console.log(dog instanceof Pet);//true</div><div class="line">console.log(dog instanceof Animal);//true</div></pre></td></tr></table></figure></p>
+<p>恩，打印出来的都是我们想要的，但是用原型方式也存在这么一个问题，我们无法向父类传递属性，也就是我们无法调用父类的构造器。</p>
+<p>当然我们也有解决的办法，那就是组合</p>
+<p>组合模式其实很简单，在构造器模式下添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function inherit(subClass,superClass)&#123;</div><div class="line">    subClass.prototype = new superClass();</div><div class="line">&#125;</div><div class="line">inherit(Pet,Animal);</div><div class="line">inherit(Cat,Pet);</div><div class="line">inherit(Dog,Pet);</div></pre></td></tr></table></figure></p>
+<p>这个代码<br>或者在原型方式下子类的构造方法中调用一下父类的构造器。<br>但是新的问题出来了，我们如果在父类的构造函数里加入一个输出调试语句，会发现，我们每次<code>new</code>一个子类时，会看到输出了两条调试语句，也就是说父类构造函数被调用了两次。</p>
+<h1 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h1><p>这种继承方式是直接在原有的原型上实现继承，并且不用添加新的类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">let animal = &#123;</div><div class="line">    move:function()&#123;</div><div class="line">        console.log(&apos;move&apos;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function inherit(o)&#123;</div><div class="line">    function F()&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    return new F();</div><div class="line">&#125;</div><div class="line"></div><div class="line">let pet = inherit(animal);</div><div class="line">pet.legs = 4;</div><div class="line">pet.talk = function()&#123;</div><div class="line">    console.log(this.voice||&apos;&apos;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">let cat = inherit(pet);</div><div class="line">cat.name = &apos;tom&apos;;</div><div class="line">cat.voice = &apos;miao&apos;;</div><div class="line"></div><div class="line">let dog = inherit(pet);</div><div class="line">dog.name=&apos;jack&apos;;</div><div class="line">dog.voice = &apos;wang&apos;;</div><div class="line"></div><div class="line">console.log(cat.legs);//4</div><div class="line">console.log(cat.name);//tom</div><div class="line">cat.move();//move</div><div class="line">cat.talk();//miao</div><div class="line"></div><div class="line">console.log(dog.legs);//4</div><div class="line">console.log(dog.name);//jack</div><div class="line">dog.move();//move</div><div class="line">dog.talk();//wang</div></pre></td></tr></table></figure></p>
+<p>原型继承的方式完全直接通过对象去实现继承，通过方法<code>inherit</code>去实现，给定对象作为原型返回新的对象，<code>inherit</code>方法里面定义一个<code>F</code>类并且把这个<code>F</code>类作为媒介，来创建新的对象;</p>
+<h1 id="寄生继承"><a href="#寄生继承" class="headerlink" title="寄生继承"></a>寄生继承</h1><p>寄生式继承的方式其实就是把<code>inherit</code>引入工厂模式，像之前的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let pet = inherit(animal);</div><div class="line">pet.legs = 4;</div><div class="line">pet.talk = function()&#123;</div><div class="line">    console.log(this.voice||&apos;&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>我们创建<code>pet</code>时，在创建完成后给<code>pet</code>又添加了一些属性个方法。<br>寄生式继承则是把这些方法都封装在<code>inherit</code>里面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function inheritPet(o)&#123;</div><div class="line">    function F()&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    F.legs = 4;</div><div class="line">    F.talk = function()&#123;</div><div class="line">        console.log(this.voice||&apos;&apos;);</div><div class="line">    &#125;</div><div class="line">    return new F();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="寄生组合继承"><a href="#寄生组合继承" class="headerlink" title="寄生组合继承"></a>寄生组合继承</h1><p>前面说到组合继承模式有个小问题，就是父类会被调用两次，这在性能方面肯定不行，我们现在借鉴寄生模式，重写<code>inherit</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function inherit(subClass,superClass)&#123;</div><div class="line">    function F()&#123;&#125;;</div><div class="line">    F.prototype = new superClass();</div><div class="line">    subClass.prototype = new F();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>新的<code>inherit</code>方法，在创建实例的时候只会调用一次父类，但是还是会调用两次<code>F</code>方法，但是<code>F</code>是个空方法，勉强也达到了我们的要求。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/javascript/">javascript</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/javascript/">javascript</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.chihy.cc/2016/09/07/extends/" data-title="js继承 | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/09/07/prototype/"  title="js原型">
+ <strong>NEXT:</strong><br/> 
+ <span>js原型
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="js继承" data-thread-key="extends" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/extends"></div>
+	
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#构造函数继承-call-apply"><span class="toc-number">1.</span> <span class="toc-text">构造函数继承(call/apply)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原型链继承"><span class="toc-number">2.</span> <span class="toc-text">原型链继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#组合模式"><span class="toc-number">3.</span> <span class="toc-text">组合模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原型继承"><span class="toc-number">4.</span> <span class="toc-text">原型继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#寄生继承"><span class="toc-number">5.</span> <span class="toc-text">寄生继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#寄生组合继承"><span class="toc-number">6.</span> <span class="toc-text">寄生组合继承</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+		<div class="author-logo"></div>		
+	
+	<div class="social-list" class="clearfix">
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>5</sup></a></li>
+		
+			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/categories/node-javascript/" title="node,javascript">node,javascript<sup>0</sup></a></li>
+		
+			<li><a href="/categories/nodejs/" title="nodejs">nodejs<sup>0</sup></a></li>
+		
+			<li><a href="/categories/nodejs-javascript/" title="nodejs,javascript">nodejs,javascript<sup>0</sup></a></li>
+		
+			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/categories/前端-node/" title="前端,node">前端,node<sup>0</sup></a></li>
+		
+			<li><a href="/categories/前端-nodejs/" title="前端,nodejs">前端,nodejs<sup>0</sup></a></li>
+		
+			<li><a href="/categories/前端-spa/" title="前端,spa">前端,spa<sup>0</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/es6/" title="es6">es6<sup>3</sup></a></li>
+		
+			<li><a href="/tags/git/" title="git">git<sup>0</sup></a></li>
+		
+			<li><a href="/tags/git-工具/" title="git,工具">git,工具<sup>0</sup></a></li>
+		
+			<li><a href="/tags/git，工具/" title="git，工具">git，工具<sup>0</sup></a></li>
+		
+			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
+		
+			<li><a href="/tags/javascript-es6/" title="javascript,es6">javascript,es6<sup>0</sup></a></li>
+		
+			<li><a href="/tags/javascript-nodejs/" title="javascript,nodejs">javascript,nodejs<sup>0</sup></a></li>
+		
+			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/tags/node-javascript/" title="node,javascript">node,javascript<sup>0</sup></a></li>
+		
+			<li><a href="/tags/nodejs/" title="nodejs">nodejs<sup>0</sup></a></li>
+		
+			<li><a href="/tags/nodejs-javascript/" title="nodejs,javascript">nodejs,javascript<sup>0</sup></a></li>
+		
+			<li><a href="/tags/nodejs-javascript-es6/" title="nodejs,javascript,es6">nodejs,javascript,es6<sup>0</sup></a></li>
+		
+			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/tags/前端-node/" title="前端,node">前端,node<sup>0</sup></a></li>
+		
+			<li><a href="/tags/前端-spa/" title="前端,spa">前端,spa<sup>0</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer></footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"chihy"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+  </body>
+</html>
+

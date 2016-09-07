@@ -1,0 +1,332 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
+  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
+<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  
+    <title>js原型 | 沉淀 - chihysoa的网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="chihysoa">
+    
+    <meta name="description" content="js中任何对象都有原型，并在在现代的浏览器中（如chrome），通过对象的__proto__属性暴露了出来。">
+    
+    <meta name="keywords" content="javascript,原型,原型链,继承">
+    
+    
+    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+     
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
+				<a class="blog-motto">萍水相逢</a>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+				</ul>
+                            </nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/08/22/prototype/" title="js原型" itemprop="url">js原型</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-08-22T04:03:34.000Z" itemprop="datePublished">2016-08-22</time>
+    Updated:<time datetime="2016-09-07T13:42:24.437Z" itemprop="dateModified">2016-09-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+		</div>
+		
+		<p><code>js</code>中任何对象都有原型，并在在现代的浏览器中（如chrome），通过对象的<code>__proto__</code>属性暴露了出来。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let c = new Object();</div><div class="line">console.log(c.__proto__);//&#123;&#125;</div></pre></td></tr></table></figure></p>
+<p>上面的对象<code>c</code>我们没有给定它的原型，所以它的原型默认就是<code>object</code>，我们也可以在创建这个对象的时候给定它的原型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let c = Object.create(&#123;a:1&#125;);</div><div class="line">console.log(c.__proto__);//&#123;a:1&#125;</div></pre></td></tr></table></figure></p>
+<p>像上面，我们通过<code>Object.create</code>来创建一个对象，并且给定这个对象的原型为<code>{a：1}</code>，那么我们给定的这个<code>{a：1}</code>是不是也有原型呢？是的，上面我们说过，没有给定一个对象的原型时，它的原型就是<code>object</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(c.__proto__.__proto__);//&#123;&#125;</div></pre></td></tr></table></figure></p>
+<p>那么<code>object</code>有没有原型呢？有，那它的原型又是什么呢,我们来看一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let c = &#123;&#125;;</div><div class="line">c.__proto__.__proto__;//null</div></pre></td></tr></table></figure>
+<p>对<code>object</code>的原型就是<code>null</code>，<code>null</code>再往上就没有原型了。<br>这里应该有注意到<code>let c = Object.create({a:1});</code> 对象 <code>c</code>的原型是<code>{a：1}</code>,<code>{a：1}</code>的原型是<code>object</code>，<code>object</code>的原型是<code>null</code>，这就组成了一个原型链。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let c = Object.create(&#123;a:1&#125;);</div><div class="line">console.log(c.__proto__);//&#123;a:1&#125;</div></pre></td></tr></table></figure>
+<p>这个例子，当我们执行<code>c.a</code>时会打印什么呢？我们得到了值<code>1</code>，也就是我们通过对象<code>c</code>去读取原型<code>{a：1}</code>的属性时，我们是可以获取到的，说明在我们读取属性时，<code>js</code>会按原型链去查找。<br>为了更好的说明原型连，我们举个复杂点的例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">let tree = &#123;</div><div class="line">    canBurn:true</div><div class="line">&#125;;</div><div class="line"></div><div class="line">let wood = Object.create(tree);</div><div class="line"></div><div class="line">function Desk()&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">Desk.prototype = wood;</div></pre></td></tr></table></figure></p>
+<p>上面这个代码，<code>Dest</code>是一个类，这个类的原型是<code>wood</code>，<code>wood</code>则是一个由<code>tree</code>作为原型构造的对象。我们如果创建一个<code>Desk</code>的实例<code>desk</code>，则它拥有了tree的canBurn属性，如果我们直接对<code>tree</code>进行操作，给他添加一个<code>color</code>属性，那么<code>desk</code>也会拥有这个属性，不仅仅是<code>desk</code>，<code>wood</code>也会拥有这些属性。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let desk = new Desk();</div><div class="line">console.log(desk.canBurn);//true</div><div class="line">tree.color = &apos;yellow&apos;;</div><div class="line">console.log(desk.color);//yellow</div><div class="line">console.log(desk.__proto__ === wood);//true</div><div class="line">console.log(desk.__proto__.__proto__ === tree);//true</div></pre></td></tr></table></figure></p>
+<p>下面这个就是原型链的关系图<br><img src="/images/prototype/prototype-link.png" alt=""></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/javascript/">javascript</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/javascript/">javascript</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.chihy.cc/2016/08/22/prototype/" data-title="js原型 | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/08/24/extends/" title="js继承">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  js继承</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/08/13/cli/"  title="基于nodejs开发自己的cli">
+ <strong>NEXT:</strong><br/> 
+ <span>基于nodejs开发自己的cli
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="js原型" data-thread-key="prototype" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/prototype"></div>
+	
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+		<div class="author-logo"></div>		
+	
+	<div class="social-list" class="clearfix">
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>7</sup></a></li>
+		
+			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/es6/" title="es6">es6<sup>5</sup></a></li>
+		
+			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
+		
+			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer></footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"chihy"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,330 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
+  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
+<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  
+    <title>es6入门--class | 沉淀 - chihysoa的网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="chihysoa">
+    
+    <meta name="description" content="js中，function的概念既是方法也是类，所以在es6之前创建一个类就是通过定义function来实现，然后通过new这个function来创建实例。">
+    
+    <meta name="keywords" content="javascript,es6,es2015,ecmascript,类,继承">
+    
+    
+    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+     
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
+				<a class="blog-motto">萍水相逢</a>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+				</ul>
+                            </nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/09/06/es6_5/" title="es6入门--class" itemprop="url">es6入门--class</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-09-06T14:27:32.000Z" itemprop="datePublished">2016-09-06</time>
+    Updated:<time datetime="2016-09-07T13:38:00.990Z" itemprop="dateModified">2016-09-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#定义"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#constructor-NaN"><span class="toc-number">2.</span> <span class="toc-text">constructor</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#class表达式"><span class="toc-number">3.</span> <span class="toc-text">class表达式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#继承"><span class="toc-number">4.</span> <span class="toc-text">继承</span></a></li></ol>
+		</div>
+		
+		<p><code>js</code>中，<code>function</code>的概念既是方法也是类，所以在<code>es6</code>之前创建一个类就是通过定义<code>function</code>来实现，然后通过<code>new</code>这个<code>function</code>来创建实例。<br><a id="more"></a><br>比如我要创建<code>Person</code>这个类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function Person(name)&#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line">Person.prototype.say = function()&#123;</div><div class="line">    console.log(&apos;hello &apos;+this.name)</div><div class="line">&#125;</div><div class="line"></div><div class="line">let jack = new Person(&apos;jack&apos;);</div></pre></td></tr></table></figure></p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>es6中为了方便类的创建和更加清晰引入了class这个概念。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">class Person &#123;</div><div class="line">    constructor(name)&#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    say()&#123;</div><div class="line">        console.log(&apos;hello &apos;+this.name)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">let jack = new Person(&apos;jack&apos;);</div></pre></td></tr></table></figure></p>
+<p>在<code>es6</code>中，<code>class</code>其实只是一个语法糖，并不是真正的类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">typeof Person;//function</div><div class="line">Person === Person.prototype.constructor // true</div></pre></td></tr></table></figure></p>
+<p>注意，定义类的方法的时候，前面不需要加上<code>function</code>这个关键字，直接把函数定义放进去了就可以了。另外，方法之间不需要逗号分隔。还有，虽然<code>class</code>只是个语法糖，<code>typeof Person;</code>返回的也是一个<code>function</code>但是，直接调用<code>Person</code>还是会报错，使用class不存在变量的提升。</p>
+<h1 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h1><p><code>constructor</code>方法是类的默认方法，也就是构造器，通过<code>new</code>来创建对象实例时，会调用该方法。一个类必须有<code>constructor</code>方法，如果没有显式定义，一个空的<code>constructor</code>方法会被添加。</p>
+<h1 id="class表达式"><a href="#class表达式" class="headerlink" title="class表达式"></a>class表达式</h1><p><code>class</code>还可以赋值给一个变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const p = class Person &#123;</div><div class="line">    constructor(name)&#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    say()&#123;</div><div class="line">        console.log(&apos;hello &apos;+this.name)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>既然谈到<code>class</code>，那就少不了继承，<code>es6</code>之后，继承也方便了很多<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">class Worker extends Person &#123;</div><div class="line">    constructor(name)&#123;</div><div class="line">        super(name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">new Worker(&apos;jack&apos;).say();//hello jack</div></pre></td></tr></table></figure></p>
+<p>需要注意的是在子类的<code>constructor</code>里面，需要调用父类的<code>constructor</code>，通过<code>super</code>来调用。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/es6/">es6</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/javascript/">javascript</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.chihy.cc/2016/09/06/es6_5/" data-title="es6入门--class | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/09/06/es6_4/" title="es6入门--模块化">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  es6入门--模块化</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/09/06/es6_3/"  title="es6入门--集合">
+ <strong>NEXT:</strong><br/> 
+ <span>es6入门--集合
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	
+	<div class="ds-thread" data-title="es6入门--class" data-thread-key="es6_5" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/es6_5"></div>
+	
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#定义"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#constructor-NaN"><span class="toc-number">2.</span> <span class="toc-text">constructor</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#class表达式"><span class="toc-number">3.</span> <span class="toc-text">class表达式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#继承"><span class="toc-number">4.</span> <span class="toc-text">继承</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	
+		<div class="author-logo"></div>		
+	
+	<div class="social-list" class="clearfix">
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>7</sup></a></li>
+		
+			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/es6/" title="es6">es6<sup>5</sup></a></li>
+		
+			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
+		
+			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
+		
+			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer></footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"chihy"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+  </body>
+</html>
+
