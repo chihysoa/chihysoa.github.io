@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>前后端分离方案 - NodeJs | 沉淀 - chihysoa的网站</title>
+  <title>前后端分离方案 - NodeJs | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="前端">
   <meta name="description" content="什么是NodeJsNodejs也是这几年非常火爆的技术，它的社区非常活跃，而且采用的是chrome v8引擎，也就是说它用的是js语言，就是我们前端所用的js语言，所以由我们前端来写再合适不过了。
 NodeJs的角色这里提一下传统的开发模式，在传统的开发模式下数据服务提供者和模板渲染都是后端服务器，Nodejs承担的角色就是把数据服务和模板渲染给分开，数据服务还是由后端提供，但是模板渲染则交给No">
 <meta property="og:type" content="article">
@@ -25,144 +29,168 @@ NodeJs的角色这里提一下传统的开发模式，在传统的开发模式�
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  
-    <link rel="icon" href="//favicon.ico">
-  
+  <meta name="summary" content="&lt;h2 id=&quot;什么是NodeJs&quot;&gt;&lt;a href=&quot;#什么是NodeJs&quot; class=&quot;headerlink&quot; title=&quot;什么是NodeJs&quot;&gt;&lt;/a&gt;什么是NodeJs&lt;/h2&gt;&lt;p&gt;Nodejs也是这几年非常火爆的技术，它的社区非常活跃，而且采用的是chrome v8引擎，也就是说它用的是js语言，就是我们前端所用的js语言，所以由我们前端来写再合适不过了。&lt;/p&gt;
+&lt;h2 id=&quot;NodeJs的角色&quot;&gt;&lt;a href=&quot;#NodeJs的角色&quot; class=&quot;headerlink&quot; title=&quot;NodeJs的角色&quot;&gt;&lt;/a&gt;NodeJs的角色&lt;/h2&gt;&lt;p&gt;这里提一下传统的开发模式，在传统的开发模式下数据服务提供者和模板渲染都是后端服务器，&lt;code&gt;Nodejs&lt;/code&gt;承担的角色就是把数据服务和模板渲染给分开，数据服务还是由后端提供，但是模板渲染则交给&lt;code&gt;Nodejs&lt;/code&gt;去处理。&lt;br&gt;和&lt;code&gt;spa&lt;/code&gt;也有一定的区别，首先由于是服务器渲染，这种方式可以完美的支持&lt;code&gt;SEO&lt;/code&gt;，但是在用户体检方面&lt;code&gt;spa&lt;/code&gt;占优。其次虽然&lt;code&gt;NodeJs&lt;/code&gt;是使用的是js语言，但是用&lt;code&gt;NodeJs&lt;/code&gt;作为服务器对开发者的要求会比spa的要求要高，需要开发者具备一定的服务器端的专业知识而且对于&lt;code&gt;NodeJs&lt;/code&gt;服务器的稳定性，健壮性，性能方面都会有一定的要求。&lt;br&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="/img/logo.jpg" class="js-avatar">
-			
-		</a>
+  <div id="loading" class="active"></div>
 
-		<hgroup>
-		  <h1 class="header-author"><a href="/">chihysoa</a></h1>
-		</hgroup>
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">chihysoa</h5>
+        <a href="mailto:undefined" title="chihysoa@163.com" class="mail">chihysoa@163.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            文章
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/chihysoa" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
 
-		
-		<p class="header-subtitle">萍水相逢</p>
-		
+  <footer class="footer">
+  <!-- <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>沉淀 - chihysoa的网站 &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> -->
+</footer>
 
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-						</div>
-					</nav>
-				</section>
-				
-				
-				
-				
-
-				
-			</div>
-		</div>
-	</header>				
 </div>
 
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">前后端分离方案 - NodeJs</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">chihysoa</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				
-					<img lazy-src="/img/logo.jpg" class="js-avatar">
-				
-			</div>
-			<hgroup>
-			  <h1 class="header-author">chihysoa</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">萍水相逢</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">前后端分离方案 - NodeJs</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-08-03T14:28:38.000Z" itemprop="datePublished" class="page-time">
+  2016-08-03
+</time>
 
-      <div class="body-wrap"><article id="post-fe-node" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/03/fe-node/" class="article-date">
-  	<time datetime="2016-08-03T14:28:38.000Z" itemprop="datePublished">2016-08-03</time>
-</a>
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端/">前端</a></li></ul>
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-fe-node" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      前后端分离方案 - NodeJs
-    </h1>
-  
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
-	</div>
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
 
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/前端/">前端</a>
-	</div>
+            
 
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是NodeJs"><span class="post-toc-text">什么是NodeJs</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#NodeJs的角色"><span class="post-toc-text">NodeJs的角色</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目结构"><span class="post-toc-text">项目结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#流程控制"><span class="post-toc-text">流程控制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目结构-1"><span class="post-toc-text">项目结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#入口文件index-js"><span class="post-toc-text">入口文件index.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#模块逻辑处理"><span class="post-toc-text">模块逻辑处理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#模板"><span class="post-toc-text">模板</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#nginx配置"><span class="post-toc-text">nginx配置</span></a></li></ol>
+            </nav>
+            
+        </aside>
 
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="什么是NodeJs"><a href="#什么是NodeJs" class="headerlink" title="什么是NodeJs"></a>什么是NodeJs</h2><p>Nodejs也是这几年非常火爆的技术，它的社区非常活跃，而且采用的是chrome v8引擎，也就是说它用的是js语言，就是我们前端所用的js语言，所以由我们前端来写再合适不过了。</p>
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="什么是NodeJs"><a href="#什么是NodeJs" class="headerlink" title="什么是NodeJs"></a>什么是NodeJs</h2><p>Nodejs也是这几年非常火爆的技术，它的社区非常活跃，而且采用的是chrome v8引擎，也就是说它用的是js语言，就是我们前端所用的js语言，所以由我们前端来写再合适不过了。</p>
 <h2 id="NodeJs的角色"><a href="#NodeJs的角色" class="headerlink" title="NodeJs的角色"></a>NodeJs的角色</h2><p>这里提一下传统的开发模式，在传统的开发模式下数据服务提供者和模板渲染都是后端服务器，<code>Nodejs</code>承担的角色就是把数据服务和模板渲染给分开，数据服务还是由后端提供，但是模板渲染则交给<code>Nodejs</code>去处理。<br>和<code>spa</code>也有一定的区别，首先由于是服务器渲染，这种方式可以完美的支持<code>SEO</code>，但是在用户体检方面<code>spa</code>占优。其次虽然<code>NodeJs</code>是使用的是js语言，但是用<code>NodeJs</code>作为服务器对开发者的要求会比spa的要求要高，需要开发者具备一定的服务器端的专业知识而且对于<code>NodeJs</code>服务器的稳定性，健壮性，性能方面都会有一定的要求。<br><a id="more"></a></p>
 <h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><p>项目划分：</p>
 <ul>
@@ -178,61 +206,41 @@ NodeJs的角色这里提一下传统的开发模式，在传统的开发模式�
 <h2 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">location /restapi/&#123;</div><div class="line">    proxy_pass http://127.0.0.1:8080;</div><div class="line">&#125;</div><div class="line">location / &#123;</div><div class="line">	proxy_pass http://127.0.0.1:8880;	</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>像上面的例子中，静态资源也是由<code>NodeJs</code>去输出，如果直接交给<code>nginx</code>会更好<br>当然那只是个最简单的例子，没有使用任何框架，实际应用中，大多数都会引入一些框架，比如<code>express</code>，<code>koa</code>等等，他们对路由轻轻处理，session/cookie管理等都做了一系列的封装，使用很方便，还添加了对一些模板引擎的支持，如ejs，Jade等等。<br>还可以通过一些构建工具来管理开发如<code>webpack</code>，<code>fis</code>等等<br>更多的大家可以查阅各自的官方文档</p>
 
-      
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="https://chihysoa.github.io/2016/08/03/fe-node/" target="_blank" rel="external">https://chihysoa.github.io/2016/08/03/fe-node/</a>
+                </p>
+                <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/08/13/cli/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">基于nodejs开发自己的cli</h4>
+      </a>
     </div>
-    
-  </div>
   
-    
-<nav id="article-nav">
+
   
-    <a href="/2016/08/13/cli/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          基于nodejs开发自己的cli
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/07/21/fe-spa/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前后端分离方案 - spa</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/07/21/fe-spa/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">前后端分离方案 - spa</h4>
+      </a>
+    </div>
   
 </nav>
 
-  
-</article>
 
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
+            
+            
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="fe-node" data-title="前后端分离方案 - NodeJs" data-url="https://chihysoa.github.io/2016/08/03/fe-node/"></div>
+	<div class="ds-thread" data-thread-key="fe-node" data-title="前后端分离方案 - NodeJs" data-url="https://chihysoa.github.io/2016/08/03/fe-node/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -252,89 +260,93 @@ NodeJs的角色这里提一下传统的开发模式，在传统的开发模式�
 
 
 
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2016 chihysoa
-    	</div>
-    </div>
-  </div>
-</footer>
-    </div>
-    
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false,
-		root: '/'
-	}
+var BLOG_SHARE = {
+    title: "前后端分离方案 - NodeJs",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "https://chihysoa.github.io/2016/08/03/fe-node/index.html"
+};
 </script>
-<script src="/js/require-2.1.6.jquery-1.9.1.min.js"></script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
 <script src="/js/main.js"></script>
 
 
 
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-<script src="/js/MathJax.js"></script>
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
 </script>
 
+<script src="/js/search.js"></script>
 
-  </div>
+
+
+
+
+
+
+
+
 </body>
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var key = 'ab004a172b44602447d13ffe29f6798b';
-    if(location.href.indexOf('chihysoa.github')!==-1){
-      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
-    }
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?"+key;
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-
-  ;(function(){
-    var id = '1260132981',webid = '1260132981';
-    if(location.href.indexOf('chihysoa.github')!==-1){
-      id = '1260133003';
-      webid = '1260133003';
-    }
-    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
-    var script = document.createElement('script');
-    script.src = src;
-    script.language ='JavaScript';
-    document.querySelector('body').appendChild(script);
-  })();
-</script>
 </html>

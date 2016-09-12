@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>es6入门--基本扩展(一) | 沉淀 - chihysoa的网站</title>
+  <title>es6入门--基本扩展(一) | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="es6">
   <meta name="description" content="es6又名es2015规范已经出来已经有一段时间了，我也使用了一段时间了，在这里介绍一些es6的新特性和亮点，有些是es7草案的语法，关于es7因为还处于草案阶段，使用的取舍看个人了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="es6入门--基本扩展(一)">
@@ -19,144 +23,167 @@
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  
-    <link rel="icon" href="//favicon.ico">
-  
+  <meta name="summary" content="&lt;p&gt;es6又名es2015规范已经出来已经有一段时间了，我也使用了一段时间了，在这里介绍一些es6的新特性和亮点，有些是es7草案的语法，关于es7因为还处于草案阶段，使用的取舍看个人了。&lt;/p&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="/img/logo.jpg" class="js-avatar">
-			
-		</a>
+  <div id="loading" class="active"></div>
 
-		<hgroup>
-		  <h1 class="header-author"><a href="/">chihysoa</a></h1>
-		</hgroup>
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">chihysoa</h5>
+        <a href="mailto:undefined" title="chihysoa@163.com" class="mail">chihysoa@163.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            文章
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/chihysoa" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
 
-		
-		<p class="header-subtitle">萍水相逢</p>
-		
+  <footer class="footer">
+  <!-- <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>沉淀 - chihysoa的网站 &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> -->
+</footer>
 
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-						</div>
-					</nav>
-				</section>
-				
-				
-				
-				
-
-				
-			</div>
-		</div>
-	</header>				
 </div>
 
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">es6入门--基本扩展(一)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">chihysoa</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				
-					<img lazy-src="/img/logo.jpg" class="js-avatar">
-				
-			</div>
-			<hgroup>
-			  <h1 class="header-author">chihysoa</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">萍水相逢</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">es6入门--基本扩展(一)</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-09-05T06:27:32.000Z" itemprop="datePublished" class="page-time">
+  2016-09-05
+</time>
 
-      <div class="body-wrap"><article id="post-es6_1" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/09/05/es6_1/" class="article-date">
-  	<time datetime="2016-09-05T06:27:32.000Z" itemprop="datePublished">2016-09-05</time>
-</a>
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-es6_1" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      es6入门--基本扩展(一)
-    </h1>
-  
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
-	</div>
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
 
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/javascript/">javascript</a>
-	</div>
+            
 
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#const-let"><span class="post-toc-text">const/let</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#解构赋值"><span class="post-toc-text">解构赋值</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#箭头函数"><span class="post-toc-text">箭头函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#扩展运算符"><span class="post-toc-text">扩展运算符</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#函数扩展"><span class="post-toc-text">函数扩展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参数默认值"><span class="post-toc-text">参数默认值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#rest参数"><span class="post-toc-text">rest参数</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#数组扩展"><span class="post-toc-text">数组扩展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array-of"><span class="post-toc-text">Array.of</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array-from"><span class="post-toc-text">Array.from</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array-find-findIndex"><span class="post-toc-text">Array.find/findIndex</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array-fill"><span class="post-toc-text">Array.fill</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#entries-values-keys"><span class="post-toc-text">entries/values/keys</span></a></li></ol></li></ol>
+            </nav>
+            
+        </aside>
 
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>es6又名es2015规范已经出来已经有一段时间了，我也使用了一段时间了，在这里介绍一些es6的新特性和亮点，有些是es7草案的语法，关于es7因为还处于草案阶段，使用的取舍看个人了。</p>
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <p>es6又名es2015规范已经出来已经有一段时间了，我也使用了一段时间了，在这里介绍一些es6的新特性和亮点，有些是es7草案的语法，关于es7因为还处于草案阶段，使用的取舍看个人了。</p>
 <a id="more"></a>
 <h1 id="const-let"><a href="#const-let" class="headerlink" title="const/let"></a>const/let</h1><p><code>const/let</code>是<code>es6</code>新引入的两个关键字，他们用来声明变量，用了替代以前的<code>var</code>，对没错就是替代。<br>那么它们是什么呢。<br><code>const</code> 用来声明的变量表示这是一个常量，一旦声明后就不能再被赋值，因此必须在声明时对其进行赋值。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">const a=1;</div><div class="line">a=3;//Assignment to constant variable.</div><div class="line">const a=2;//Identifier &apos;a&apos; has already been declared</div></pre></td></tr></table></figure></p>
 <p><code>let</code>用来声明局部变量，<code>es6</code>中引入了块级作用域，即一个<code>{}</code>就代表一个块，在这个块里用let声明的变量只在这个<code>{}</code>所在的块中有效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let a=1;</div><div class="line">&#123;</div><div class="line">    let b=2;</div><div class="line">&#125;</div><div class="line">console.log(a);//1</div><div class="line">console.log(b);// b is not defined</div></pre></td></tr></table></figure></p>
@@ -174,61 +201,41 @@
 <p>它还接受第二个第三个参数<br><code>new Array(3).fill(5,1,2);//[,5,]</code><br>第二个参数为起始下标，第三个参数是终止下标</p>
 <h2 id="entries-values-keys"><a href="#entries-values-keys" class="headerlink" title="entries/values/keys"></a>entries/values/keys</h2><p><code>es6</code>数组实例还提供了<code>entries/values/keys</code>，三个遍历器，可以用<code>for..of..</code>来循环</p>
 
-      
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="https://chihysoa.github.io/2016/09/05/es6_1/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/05/es6_1/</a>
+                </p>
+                <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/09/05/es6_2/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">es6入门--基本扩展(二)</h4>
+      </a>
     </div>
-    
-  </div>
   
-    
-<nav id="article-nav">
+
   
-    <a href="/2016/09/05/es6_2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          es6入门--基本扩展(二)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/08/24/extends/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js继承</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/08/24/extends/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">js继承</h4>
+      </a>
+    </div>
   
 </nav>
 
-  
-</article>
 
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
+            
+            
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="es6_1" data-title="es6入门--基本扩展(一)" data-url="https://chihysoa.github.io/2016/09/05/es6_1/"></div>
+	<div class="ds-thread" data-thread-key="es6_1" data-title="es6入门--基本扩展(一)" data-url="https://chihysoa.github.io/2016/09/05/es6_1/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -248,89 +255,93 @@
 
 
 
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2016 chihysoa
-    	</div>
-    </div>
-  </div>
-</footer>
-    </div>
-    
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false,
-		root: '/'
-	}
+var BLOG_SHARE = {
+    title: "es6入门--基本扩展(一)",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "https://chihysoa.github.io/2016/09/05/es6_1/index.html"
+};
 </script>
-<script src="/js/require-2.1.6.jquery-1.9.1.min.js"></script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
 <script src="/js/main.js"></script>
 
 
 
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-<script src="/js/MathJax.js"></script>
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
 </script>
 
+<script src="/js/search.js"></script>
 
-  </div>
+
+
+
+
+
+
+
+
 </body>
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var key = 'ab004a172b44602447d13ffe29f6798b';
-    if(location.href.indexOf('chihysoa.github')!==-1){
-      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
-    }
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?"+key;
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-
-  ;(function(){
-    var id = '1260132981',webid = '1260132981';
-    if(location.href.indexOf('chihysoa.github')!==-1){
-      id = '1260133003';
-      webid = '1260133003';
-    }
-    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
-    var script = document.createElement('script');
-    script.src = src;
-    script.language ='JavaScript';
-    document.querySelector('body').appendChild(script);
-  })();
-</script>
 </html>
