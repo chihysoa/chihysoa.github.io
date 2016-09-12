@@ -1,85 +1,177 @@
-
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  <meta charset="utf-8">
   
-    <title>项目版本管理 - git基本操作 | 沉淀 - chihysoa的网站</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="chihysoa">
-    
-    <meta name="description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>项目版本管理 - git基本操作 | 沉淀 - chihysoa的网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
 安装官网上有各个系统的安装教程
 Ubuntu/Debian 比较简单 sudo apt-get install git
 mac/window下 可以直接官网下载">
-    
-    <meta name="keywords" content="git,项目版本">
-    
-    
-    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="stylesheet" href="/css/style.css">
-     
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目版本管理 - git基本操作">
+<meta property="og:url" content="http://www.chihy.cc/blog/2016/07/20/git/index.html">
+<meta property="og:site_name" content="沉淀 - chihysoa的网站">
+<meta property="og:description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
+安装官网上有各个系统的安装教程
+Ubuntu/Debian 比较简单 sudo apt-get install git
+mac/window下 可以直接官网下载">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/git/status.jpg">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/git/ssh.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/git/log.jpg">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/git/reflog.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/git/branch.png">
+<meta property="og:updated_time" content="2016-09-12T04:15:22.286Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="项目版本管理 - git基本操作">
+<meta name="twitter:description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
+安装官网上有各个系统的安装教程
+Ubuntu/Debian 比较简单 sudo apt-get install git
+mac/window下 可以直接官网下载">
+<meta name="twitter:image" content="http://www.chihy.cc/blog/blog/images/git/status.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/blog//favicon.ico">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 
-  <body>
-    <header>
-      <div>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">chihysoa</a></h1>
+		</hgroup>
+
 		
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
-				<a class="blog-motto">萍水相逢</a>
+		<p class="header-subtitle">萍水相逢</p>
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/blog/">主页</a></li>
+				        
+							<li><a href="/blog/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">首页</a></li>
-					
-						<li><a href="/archives">归档</a></li>
-					
-				</ul>
-                            </nav>			
+		</div>
+	</header>				
 </div>
 
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">chihysoa</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">chihysoa</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">萍水相逢</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/blog/">主页</a></li>
+		        
+					<li><a href="/blog/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016/07/20/git/" class="article-date">
+  	<time datetime="2016-07-20T08:32:52.000Z" itemprop="datePublished">2016-07-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-      <a href="/2016/07/20/git/" title="项目版本管理 - git基本操作" itemprop="url">项目版本管理 - git基本操作</a>
-  </h1>
-  <p class="article-author">By
+      <input type="hidden" class="isFancy" />
     
-      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2016-07-20T08:32:52.000Z" itemprop="datePublished">2016-07-20</time>
-    Updated:<time datetime="2016-09-07T11:04:56.778Z" itemprop="dateModified">2016-09-07</time>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建版本库"><span class="toc-number">2.</span> <span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程仓库"><span class="toc-number">3.</span> <span class="toc-text">远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加远程库"><span class="toc-number">3.1.</span> <span class="toc-text">添加远程库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提交代码"><span class="toc-number">3.2.</span> <span class="toc-text">提交代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh配置"><span class="toc-number">3.3.</span> <span class="toc-text">ssh配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从远程库克隆"><span class="toc-number">3.4.</span> <span class="toc-text">从远程库克隆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#版本管理"><span class="toc-number">4.</span> <span class="toc-text">版本管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作区和暂存区"><span class="toc-number">5.</span> <span class="toc-text">工作区和暂存区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#工作区"><span class="toc-number">5.1.</span> <span class="toc-text">工作区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本库（Repository）"><span class="toc-number">5.2.</span> <span class="toc-text">版本库（Repository）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支"><span class="toc-number">6.</span> <span class="toc-text">分支</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建分支"><span class="toc-number">6.1.</span> <span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并分支"><span class="toc-number">6.2.</span> <span class="toc-text">合并分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分支管理"><span class="toc-number">6.3.</span> <span class="toc-text">分支管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#合并冲突"><span class="toc-number">7.</span> <span class="toc-text">合并冲突</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签"><span class="toc-number">8.</span> <span class="toc-text">标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标签操作"><span class="toc-number">8.1.</span> <span class="toc-text">标签操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitignore文件"><span class="toc-number">9.</span> <span class="toc-text">.gitignore文件</span></a></li></ol>
-		</div>
-		
-		<p>Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。</p>
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      项目版本管理 - git基本操作
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/工具/">工具</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/blog/categories/工具/">工具</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="https://git-scm.com" target="_blank" rel="external">官网</a>上有各个系统的安装教程</p>
 <p>Ubuntu/Debian 比较简单 <code>sudo apt-get install git</code></p>
 <p>mac/window下 可以直接官网下载<br><a id="more"></a><br>可视化工具(比较推荐用命令行):</p>
@@ -98,14 +190,14 @@ mac/window下 可以直接官网下载">
 </ul>
 <h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>远程仓库网上有很多比如<br><a href="https://github.com" target="_blank" rel="external">Github</a>  ,  <a href="https://about.gitlab.com/" target="_blank" rel="external">Gitlab</a>  ,  <a href="https://git.oachina.net" target="_blank" rel="external">码云</a>  ,  <a href="https://coding.net/" target="_blank" rel="external">码市</a>  ,  <a href="https://code.csdn.net/" target="_blank" rel="external">CSDN代码托管</a></p>
 <h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><p><code>git remote -v</code> 可以查看当前所关联的远程仓库列表(init完时为空)<br><code>git remote add [name] [url]</code> 添加远程仓库地址</p>
-<h3 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h3><p>添加完远程库,就可以开始提交代码<br><code>git status -s</code> 查看变更的文件列表<br><img src="/images/git/status.jpg" alt=""><br><code>git add [-f] [file]</code> 添加要提交的文件/文件夹(<code>-f</code>为强制添加)<br><code>git commit -m &quot;mesg&quot;</code> 提交添加的文件/文件夹带本地版本库<br><code>git push [remote name] [branch name]</code> 推送到远程库<br>push时候你会发现每次都要输入密码<br><code>git config --global credential.helper store</code> 可以用这个命令来让git记住密码</p>
-<h3 id="ssh配置"><a href="#ssh配置" class="headerlink" title="ssh配置"></a>ssh配置</h3><p>1.<code>ssh-keygen -t rsa -C &quot;账号&quot;</code> 在提示的<code>.ssh</code>文件下的<code>.pub</code> 文件<br>2.复制<code>.pub</code>文件内容 到git网站上设置的ssh值<br>3.<code>ssh -T git地址</code> 测试是否成功<br><img src="/images/git/ssh.png" alt=""></p>
+<h3 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h3><p>添加完远程库,就可以开始提交代码<br><code>git status -s</code> 查看变更的文件列表<br><img src="/blog/images/git/status.jpg" alt=""><br><code>git add [-f] [file]</code> 添加要提交的文件/文件夹(<code>-f</code>为强制添加)<br><code>git commit -m &quot;mesg&quot;</code> 提交添加的文件/文件夹带本地版本库<br><code>git push [remote name] [branch name]</code> 推送到远程库<br>push时候你会发现每次都要输入密码<br><code>git config --global credential.helper store</code> 可以用这个命令来让git记住密码</p>
+<h3 id="ssh配置"><a href="#ssh配置" class="headerlink" title="ssh配置"></a>ssh配置</h3><p>1.<code>ssh-keygen -t rsa -C &quot;账号&quot;</code> 在提示的<code>.ssh</code>文件下的<code>.pub</code> 文件<br>2.复制<code>.pub</code>文件内容 到git网站上设置的ssh值<br>3.<code>ssh -T git地址</code> 测试是否成功<br><img src="/blog/images/git/ssh.png" alt=""></p>
 <h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><p><code>git clone url [--depth=1] [-b branch_name] [&lt;directory&gt;]</code> –depth=1是git提交的次数 -b 分支 directory为目标文件夹</p>
-<h2 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h2><p><code>git log</code> 可以查看所有提交的记录<br><img src="/images/git/log.jpg" alt=""><br>像<code>3628164f....2e1e0</code>这个是commit的id(可以是前面8位)<br><code>git reset --hard [commit]</code> 回滚到commit的id的代码<br>当reset以后想回退，可以直接<code>git pull</code>，也可以直接用commit id<br><code>git reflog</code> 记录你的每一次命令，通过这个也可以拿到commit id<br><img src="/images/git/reflog.png" alt=""></p>
+<h2 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h2><p><code>git log</code> 可以查看所有提交的记录<br><img src="/blog/images/git/log.jpg" alt=""><br>像<code>3628164f....2e1e0</code>这个是commit的id(可以是前面8位)<br><code>git reset --hard [commit]</code> 回滚到commit的id的代码<br>当reset以后想回退，可以直接<code>git pull</code>，也可以直接用commit id<br><code>git reflog</code> 记录你的每一次命令，通过这个也可以拿到commit id<br><img src="/blog/images/git/reflog.png" alt=""></p>
 <h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><h3 id="工作区"><a href="#工作区" class="headerlink" title="工作区"></a>工作区</h3><p>我们操作文件的目录就是工作区</p>
 <h3 id="版本库（Repository）"><a href="#版本库（Repository）" class="headerlink" title="版本库（Repository）"></a>版本库（Repository）</h3><p>目录下的.git目录，版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区以及分支，当我们add的时候，git会被文件保存到暂存区，commit时候会把暂存区的所有内容提交到当前分支，push时候才会把分支push到远程库</p>
 <h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>分支的作用是巨大的，比如有一个需求，你需要三天去开发，第一天开发了30%，想提交怎么办，如果没有分支，你一提交，大家的代码就都影响到，可能导致直接无法运行，如果不提交，万一因为某种原因，代码丢掉了怎么办?<br>有了分支就不同了，你可以创建一个自己的分支，你在自己分支上开发，别人还在原来的分支上，互不影响，等全部开发完成，再把分支合并即可。<br>而且Git的分支管理，无论创建、切换和删除分支速度都很快，基本可以在1秒之内完成。</p>
-<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><p><code>git branch -a</code> 可以查看所有分支,包括远程<br><img src="/images/git/branch.png" alt=""><br>创建资源库的时候，git会默认创建一个分支 <code>maste</code>，这也是主分支，值得一提的是，还有个<code>HEAD</code>有些地方也会把它当成是一个分支，它其实是当前分支的指针，比如当前是<code>master</code>那它就指向<code>master</code><br><code>git branch dev</code> 创建<code>dev</code>分支<br><code>git checkout dev</code> 切换到<code>dev</code>分支<br>这两条命令相当于<br><code>git checkout -b dev</code> 创建并切换到<code>dev</code>分支</p>
+<h3 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h3><p><code>git branch -a</code> 可以查看所有分支,包括远程<br><img src="/blog/images/git/branch.png" alt=""><br>创建资源库的时候，git会默认创建一个分支 <code>maste</code>，这也是主分支，值得一提的是，还有个<code>HEAD</code>有些地方也会把它当成是一个分支，它其实是当前分支的指针，比如当前是<code>master</code>那它就指向<code>master</code><br><code>git branch dev</code> 创建<code>dev</code>分支<br><code>git checkout dev</code> 切换到<code>dev</code>分支<br>这两条命令相当于<br><code>git checkout -b dev</code> 创建并切换到<code>dev</code>分支</p>
 <h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><p><code>git merge [branch_name] -m &quot;mesg&quot;</code> 合并指定分支到当前分支<br>合并分支时，git会使用<code>Fast forward</code>模式，这种模式下，删除分支后，会丢掉分支信息<br><code>git merge --no-ff -m &quot;mesg&quot; dev</code> 合并分支，不用<code>Fast forward</code>模式<br><code>git branch -d [branch_name]</code> 删除分支</p>
 <h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><p>在实际开发中，我们应该按照几个基本原则进行分支管理：</p>
 <ol>
@@ -118,247 +210,165 @@ mac/window下 可以直接官网下载">
 <h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>标签可以理解为版本库的一个快照，我们可以为某一个版本打上标签，方便以后可以直接取出这个版本的文件</p>
 <h3 id="标签操作"><a href="#标签操作" class="headerlink" title="标签操作"></a>标签操作</h3><p><code>git tag</code> 查看所有标签<br><code>git tag [-a] name -m &quot;mesg&quot; [commit_id]</code> 创建标签，可以加上指定的commit id，为某次提交创建标签<br><code>git show name</code> 查看标签的详细信息<br><code>git push origin --tags</code> push所有标签到远程库<br><code>git push origin name</code> push某一个标签到远程库<br><code>git tag -d name</code> 删除标签<br><code>git push origin :refs/tags/name</code> 删除远程库标签</p>
 <h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a><code>.gitignore</code>文件</h2><p>用于配置git忽略的文件列表，<code>.gitignore</code>文件可以自己配置，GitHub也给出了各种配置，<a href="https://github.com/github/gitignore" target="_blank" rel="external">可以点这里</a><br><code>git check-ignore -v file</code> 可以用来检查规则</p>
-  
-	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/工具/">工具</a>
+      
+    </div>
+    
   </div>
-
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/工具/">工具</a>
-</div>
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://www.chihy.cc/2016/07/20/git/" data-title="项目版本管理 - git基本操作 | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2016/07/21/fe/" title="前后端分离方案">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  前后端分离方案</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2016/07/19/welcome/"  title="引言">
- <strong>NEXT:</strong><br/> 
- <span>引言
-</span>
-</a>
-</div>
-
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/07/21/fe/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          前后端分离方案
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2016/07/19/welcome/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">引言</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
 </nav>
 
-	
-<section class="comment">
-	
-	<div class="ds-thread" data-title="项目版本管理 - git基本操作" data-thread-key="git" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/git"></div>
-	
-</section>
+  
+</article>
 
 
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建版本库"><span class="toc-number">2.</span> <span class="toc-text">创建版本库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程仓库"><span class="toc-number">3.</span> <span class="toc-text">远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加远程库"><span class="toc-number">3.1.</span> <span class="toc-text">添加远程库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提交代码"><span class="toc-number">3.2.</span> <span class="toc-text">提交代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh配置"><span class="toc-number">3.3.</span> <span class="toc-text">ssh配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从远程库克隆"><span class="toc-number">3.4.</span> <span class="toc-text">从远程库克隆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#版本管理"><span class="toc-number">4.</span> <span class="toc-text">版本管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作区和暂存区"><span class="toc-number">5.</span> <span class="toc-text">工作区和暂存区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#工作区"><span class="toc-number">5.1.</span> <span class="toc-text">工作区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本库（Repository）"><span class="toc-number">5.2.</span> <span class="toc-text">版本库（Repository）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支"><span class="toc-number">6.</span> <span class="toc-text">分支</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建分支"><span class="toc-number">6.1.</span> <span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并分支"><span class="toc-number">6.2.</span> <span class="toc-text">合并分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分支管理"><span class="toc-number">6.3.</span> <span class="toc-text">分支管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#合并冲突"><span class="toc-number">7.</span> <span class="toc-text">合并冲突</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签"><span class="toc-number">8.</span> <span class="toc-text">标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标签操作"><span class="toc-number">8.1.</span> <span class="toc-text">标签操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitignore文件"><span class="toc-number">9.</span> <span class="toc-text">.gitignore文件</span></a></li></ol>
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-<div id="authorInfo">
-	
-		<div class="author-logo"></div>		
-	
-	<div class="social-list" class="clearfix">
-		
-		
-		
-		
-		
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-</div>
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">Categories</p>
-		<ul>
-		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>7</sup></a></li>
-		
-			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
 
 
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/es6/" title="es6">es6<sup>5</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
-		
-			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="git" data-title="项目版本管理 - git基本操作" data-url="http://www.chihy.cc/blog/blog/2016/07/20/git/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chihy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
 </div>
 
 
-</aside>
+
+
 </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 chihysoa
+    	</div>
     </div>
-    <footer></footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
-        
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: '/blog/'
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
 });
 </script>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"chihy"};
+  </div>
+</body>
+<script>
+  var _hmt = _hmt || [];
   (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
   })();
-</script> 
 
-
-
-
-  </body>
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+</script>
 </html>
-

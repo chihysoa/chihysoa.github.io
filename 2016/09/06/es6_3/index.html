@@ -1,82 +1,162 @@
-
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  <meta charset="utf-8">
   
-    <title>es6入门--集合 | 沉淀 - chihysoa的网站</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="chihysoa">
-    
-    <meta name="description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法put(key,value)：添加某个值，返回Set结构本身。get(key)：返回对象的值，不存在则为undefineddelete(key">
-    
-    <meta name="keywords" content="javascript,es6,es2015,ecmascript,map,set,weakmap,weakset">
-    
-    
-    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="stylesheet" href="/css/style.css">
-     
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>es6入门--集合 | 沉淀 - chihysoa的网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6入门--集合">
+<meta property="og:url" content="http://www.chihy.cc/blog/2016/09/06/es6_3/index.html">
+<meta property="og:site_name" content="沉淀 - chihysoa的网站">
+<meta property="og:description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+<meta property="og:updated_time" content="2016-09-12T03:49:43.672Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="es6入门--集合">
+<meta name="twitter:description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+  
+    <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/blog//favicon.ico">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 
-  <body>
-    <header>
-      <div>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">chihysoa</a></h1>
+		</hgroup>
+
 		
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
-				<a class="blog-motto">萍水相逢</a>
+		<p class="header-subtitle">萍水相逢</p>
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/blog/">主页</a></li>
+				        
+							<li><a href="/blog/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">首页</a></li>
-					
-						<li><a href="/archives">归档</a></li>
-					
-				</ul>
-                            </nav>			
+		</div>
+	</header>				
 </div>
 
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">chihysoa</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">chihysoa</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">萍水相逢</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/blog/">主页</a></li>
+		        
+					<li><a href="/blog/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-es6_3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016/09/06/es6_3/" class="article-date">
+  	<time datetime="2016-09-06T12:27:24.000Z" itemprop="datePublished">2016-09-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-      <a href="/2016/09/06/es6_3/" title="es6入门--集合" itemprop="url">es6入门--集合</a>
-  </h1>
-  <p class="article-author">By
+      <input type="hidden" class="isFancy" />
     
-      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2016-09-06T12:27:24.000Z" itemprop="datePublished">2016-09-06</time>
-    Updated:<time datetime="2016-09-07T13:40:07.898Z" itemprop="dateModified">2016-09-07</time>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Map"><span class="toc-number">1.</span> <span class="toc-text">Map</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Set"><span class="toc-number">2.</span> <span class="toc-text">Set</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#WeakSet-WeakMap"><span class="toc-number">3.</span> <span class="toc-text">WeakSet/WeakMap</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Iterator和for…of循环"><span class="toc-number">4.</span> <span class="toc-text">Iterator和for…of循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Iterator-遍历器"><span class="toc-number">4.1.</span> <span class="toc-text">Iterator(遍历器)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…of"><span class="toc-number">4.2.</span> <span class="toc-text">for…of</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Generator-函数"><span class="toc-number">5.</span> <span class="toc-text">Generator 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建"><span class="toc-number">5.1.</span> <span class="toc-text">创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yield"><span class="toc-number">5.2.</span> <span class="toc-text">yield</span></a></li></ol></li></ol>
-		</div>
-		
-		<h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><p>Map类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。<br>Map有如下属性和方法<br><em>put(key,value)：添加某个值，返回Set结构本身。</em><br><em>get(key)：返回对象的值，不存在则为undefined</em><br><em>delete(key)：删除某个值，返回一个布尔值，表示删除是否成功。</em><br><em>has(key)：返回一个布尔值，表示该值是否存在。</em><br><em>clear()：清除所有成员，没有返回值。</em><br><em>size：返回集合大小。</em></p>
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      es6入门--集合
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/es6/">es6</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/blog/categories/javascript/">javascript</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><p>Map类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。<br>Map有如下属性和方法<br><a id="more"></a><br><em>put(key,value)：添加某个值，返回Set结构本身。</em><br><em>get(key)：返回对象的值，不存在则为undefined</em><br><em>delete(key)：删除某个值，返回一个布尔值，表示删除是否成功。</em><br><em>has(key)：返回一个布尔值，表示该值是否存在。</em><br><em>clear()：清除所有成员，没有返回值。</em><br><em>size：返回集合大小。</em></p>
 <p>Map有四个遍历方法<br><em>keys()：返回键名的遍历器。</em><br><em>values()：返回键值的遍历器。</em><br><em>entries()：返回所有成员的遍历器。</em><br><em>forEach()：遍历Map的所有成员。</em></p>
 <h1 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h1><p>Set是一个新的数据结构，类似于数组，不同的是，它里面的元素是唯一的，不重复的。<br>let s = new Set();<br>s.add(1);<br>s.add(2);<br>s.add(2);<br>console.log(…s);// [1,2]<br>也可以直接通过一个数组来创建Set<br>let s=new Set([1,2,2]);<br>往Set里面添加元素时候，并不会发生类型的转换所以，5和“5”是两个不同的元素<br>let s = new Set();<br>s.add(5);<br>s.add(“5”);<br>console.log(…s);// [5，5]<br>Set有如下属性和方法<br><em>add(value)：添加某个值，返回Set结构本身。</em><br><em>delete(value)：删除某个值，返回一个布尔值，表示删除是否成功。</em><br><em>has(value)：返回一个布尔值，表示该值是否为Set的成员。</em><br><em>clear()：清除所有成员，没有返回值。</em><br><em>size：返回集合大小。</em></p>
 <p>Set有四个遍历方法<br><em>keys()：返回键名的遍历器</em><br><em>values()：返回键值的遍历器</em><br><em>entries()：返回键值对的遍历器</em><br><em>forEach()：使用回调函数遍历每个成员</em></p>
@@ -87,247 +167,165 @@
 <h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>用function后面添加<code>*</code>来定义一个Generator函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function* g()&#123;</div><div class="line">    let a = 1;</div><div class="line">    for(let i=0;i&lt;10;i++)&#123;</div><div class="line">        yield a++;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">for(let obj of g())&#123;</div><div class="line">    console.log(obj)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>通过<code>g.constructor；//[Function: GeneratorFunction]</code>可以用来判断一个函数是不是Generator 函数</p>
 <h2 id="yield"><a href="#yield" class="headerlink" title="yield"></a>yield</h2><p>由于Generator函数返回的遍历器对象，只有调用next方法才会遍历下一个内部状态，所以其实提供了一种可以暂停执行的函数。yield语句就是暂停标志。<br><em>1.遇到yield语句，就暂停执行后面的操作，并将紧跟在yield后面的那个表达式的值，作为返回的对象的value属性值。</em><br><em>2.下一次调用next方法时，再继续往下执行，直到遇到下一个yield语句。</em><br><em>3.如果没有再遇到新的yield语句，就一直运行到函数结束，直到return语句为止，并将return语句后面的表达式的值，作为返回的对象的value属性值。</em><br><em>4.如果该函数没有return语句，则返回的对象的value属性值为undefined。</em></p>
-  
-	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/es6/">es6</a>
+      
+    </div>
+    
   </div>
-
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/javascript/">javascript</a>
-</div>
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://www.chihy.cc/2016/09/06/es6_3/" data-title="es6入门--集合 | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2016/09/06/es6_5/" title="es6入门--class">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  es6入门--class</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2016/09/05/es6_2/"  title="es6入门--基本扩展(二)">
- <strong>NEXT:</strong><br/> 
- <span>es6入门--基本扩展(二)
-</span>
-</a>
-</div>
-
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/09/06/es6_5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          es6入门--class
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2016/09/05/es6_2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">es6入门--基本扩展(二)</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
 </nav>
 
-	
-<section class="comment">
-	
-	<div class="ds-thread" data-title="es6入门--集合" data-thread-key="es6_3" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/es6_3"></div>
-	
-</section>
+  
+</article>
 
 
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Map"><span class="toc-number">1.</span> <span class="toc-text">Map</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Set"><span class="toc-number">2.</span> <span class="toc-text">Set</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#WeakSet-WeakMap"><span class="toc-number">3.</span> <span class="toc-text">WeakSet/WeakMap</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Iterator和for…of循环"><span class="toc-number">4.</span> <span class="toc-text">Iterator和for…of循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Iterator-遍历器"><span class="toc-number">4.1.</span> <span class="toc-text">Iterator(遍历器)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for…of"><span class="toc-number">4.2.</span> <span class="toc-text">for…of</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Generator-函数"><span class="toc-number">5.</span> <span class="toc-text">Generator 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建"><span class="toc-number">5.1.</span> <span class="toc-text">创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yield"><span class="toc-number">5.2.</span> <span class="toc-text">yield</span></a></li></ol></li></ol>
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-<div id="authorInfo">
-	
-		<div class="author-logo"></div>		
-	
-	<div class="social-list" class="clearfix">
-		
-		
-		
-		
-		
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-</div>
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">Categories</p>
-		<ul>
-		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>7</sup></a></li>
-		
-			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
 
 
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/es6/" title="es6">es6<sup>5</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
-		
-			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="es6_3" data-title="es6入门--集合" data-url="http://www.chihy.cc/blog/blog/2016/09/06/es6_3/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chihy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
 </div>
 
 
-</aside>
+
+
 </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 chihysoa
+    	</div>
     </div>
-    <footer></footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
-        
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: '/blog/'
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
 });
 </script>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"chihy"};
+  </div>
+</body>
+<script>
+  var _hmt = _hmt || [];
   (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
   })();
-</script> 
 
-
-
-
-  </body>
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+</script>
 </html>
-

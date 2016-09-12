@@ -1,108 +1,208 @@
-
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+  <meta charset="utf-8">
   
-    <title>前后端分离方案 - spa | 沉淀 - chihysoa的网站</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="chihysoa">
-    
-    <meta name="description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>前后端分离方案 - spa | 沉淀 - chihysoa的网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
 项目划分：
 
 后端  提供数据接口服务
 前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
 
 前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
-    
-    <meta name="keywords" content="javascript,前端,后端,前后端,分离,单页应用,spa">
-    
-    
-    <link rel="alternate" href="atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="stylesheet" href="/css/style.css">
-     
+<meta property="og:type" content="article">
+<meta property="og:title" content="前后端分离方案 - spa">
+<meta property="og:url" content="http://www.chihy.cc/blog/2016/07/21/fe-spa/index.html">
+<meta property="og:site_name" content="沉淀 - chihysoa的网站">
+<meta property="og:description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+项目划分：
+
+后端  提供数据接口服务
+前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
+
+前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-fe.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-index.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-list.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/nginx.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-l.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/mock.png">
+<meta property="og:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-tomcat.png">
+<meta property="og:updated_time" content="2016-09-12T04:15:23.338Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前后端分离方案 - spa">
+<meta name="twitter:description" content="这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。既然是单页应用，前端入口只有一个html以及若干js和css资源文件。
+项目划分：
+
+后端  提供数据接口服务
+前端  html 入口  js 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信  css 控制页面样式
+
+前端与后端的通信主要通过ajax，下面是一个简单的项目结构（前端代码）">
+<meta name="twitter:image" content="http://www.chihy.cc/blog/blog/images/fe/spa-fe.png">
+  
+    <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/blog//favicon.ico">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 
-  <body>
-    <header>
-      <div>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">chihysoa</a></h1>
+		</hgroup>
+
 		
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="沉淀 - chihysoa的网站">沉淀 - chihysoa的网站</a></h1>
-				<a class="blog-motto">萍水相逢</a>
+		<p class="header-subtitle">萍水相逢</p>
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/blog/">主页</a></li>
+				        
+							<li><a href="/blog/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">首页</a></li>
-					
-						<li><a href="/archives">归档</a></li>
-					
-				</ul>
-                            </nav>			
+		</div>
+	</header>				
 </div>
 
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">chihysoa</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img lazy-src="/blog/img/logo.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">chihysoa</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">萍水相逢</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/blog/">主页</a></li>
+		        
+					<li><a href="/blog/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-fe-spa" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/blog/2016/07/21/fe-spa/" class="article-date">
+  	<time datetime="2016-07-21T14:28:38.000Z" itemprop="datePublished">2016-07-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-      <a href="/2016/07/21/fe-spa/" title="前后端分离方案 - spa" itemprop="url">前后端分离方案 - spa</a>
-  </h1>
-  <p class="article-author">By
+      <input type="hidden" class="isFancy" />
     
-      <a href="http://www.chihy.cc" title="chihysoa">chihysoa</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2016-07-21T14:28:38.000Z" itemprop="datePublished">2016-07-21</time>
-    Updated:<time datetime="2016-09-07T11:04:50.470Z" itemprop="dateModified">2016-09-07</time>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		
-		</div>
-		
-		<p>这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。<br>既然是单页应用，前端入口只有一个<code>html</code>以及若干<code>js</code>和<code>css</code>资源文件。</p>
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      前后端分离方案 - spa
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/前端/">前端</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/blog/categories/前端/">前端</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这里不对单页应用的概念进行阐述了，如果有不清楚的请自行百度或谷歌。<br>既然是单页应用，前端入口只有一个<code>html</code>以及若干<code>js</code>和<code>css</code>资源文件。</p>
 <p>项目划分：</p>
 <ul>
 <li>后端<br>  <em>提供数据接口服务</em></li>
 <li>前端<br>  <em><code>html</code> 入口</em><br>  <em><code>js</code> 控制整个单页应用的逻辑，包括路由，页面渲染，与后端通信</em><br>  <em><code>css</code> 控制页面样式</em></li>
 </ul>
-<p>前端与后端的通信主要通过<code>ajax</code>，下面是一个简单的项目结构（前端代码）<br><a id="more"></a><br><img src="/images/fe/spa-fe.png" alt=""></p>
+<p>前端与后端的通信主要通过<code>ajax</code>，下面是一个简单的项目结构（前端代码）<br><a id="more"></a><br><img src="/blog/images/fe/spa-fe.png" alt=""></p>
 <ul>
 <li><code>index.html</code> 是我们spa的入口文件</li>
 <li><code>static</code>文件夹下面是我们的静态资源文件，像<code>js</code>，<code>css</code>，<code>图片</code>等</li>
 </ul>
 <p>因为是<code>spa</code>，所以页面的路由掌控在我们前端自己的手里，后端为我们提供的只是一个个数据接口的服务，所以只要我们能够自己模拟实现这个数据接口，我们就可以完全脱离后端去开发。<br>首先，我们先不依托于数据接口，先把页面展示，逻辑都跑起来。这个就比较简单了，我们把前端代码随便丢到一个服务器容器里面就可以，比如nodejs，tomcat，nginx等。这里我比较推荐nginx，下面我也会使用nginx作为服务器。</p>
-<p>这里是我写的一个简单的spa的例子(对于spa的实现，这里不做讨论)，跑起来就是这样<br><img src="/images/fe/spa-index.png" alt=""><img src="/images/fe/spa-list.png" alt=""><br>恩，不需要数据接口的情况下，我们已经可以正常使用了，但这并不是我们想要的，我们想要和后端通信通信。<br>当然实现的方法有很多，比如</p>
+<p>这里是我写的一个简单的spa的例子(对于spa的实现，这里不做讨论)，跑起来就是这样<br><img src="/blog/images/fe/spa-index.png" alt=""><img src="/blog/images/fe/spa-list.png" alt=""><br>恩，不需要数据接口的情况下，我们已经可以正常使用了，但这并不是我们想要的，我们想要和后端通信通信。<br>当然实现的方法有很多，比如</p>
 <ol>
 <li>http做代理比如用Fiddler</li>
 <li>服务器实现一套数据模拟接口</li>
 <li>如果后端已经存在的接口，只需要配置一个反向代理</li>
 <li><a href="http://mockjs.com/" target="_blank" rel="external">mockjs</a></li>
 </ol>
-<p>前面几点可能会稍微复杂一点，下面是一个简单的nginx的配置<br>(hosts绑定 <code>127.0.0.1 www.spa.com</code>)<br><img src="/images/fe/nginx.png" alt=""><img src="/images/fe/spa-l.png" alt=""><br>关于nginx的使用和配置，后续会单独开一篇文章<br>也可以采用<code>4</code>比较简便，像下面这样，更复杂的配置可以参考<a href="http://mockjs.com/examples.html" target="_blank" rel="external">官网的文档</a><br><img src="/images/fe/mock.png" alt=""></p>
-<p>开发完成后，如果只用一个tomcat那只要把前端的代码丢到项目相应的目录即可，比如<br><img src="/images/fe/spa-tomcat.png" alt=""><br><code>src</code>为后端的代码，我们只需要把我们前端的代码丢到<code>webContent</code>下即可。</p>
+<p>前面几点可能会稍微复杂一点，下面是一个简单的nginx的配置<br>(hosts绑定 <code>127.0.0.1 www.spa.com</code>)<br><img src="/blog/images/fe/nginx.png" alt=""><img src="/blog/images/fe/spa-l.png" alt=""><br>关于nginx的使用和配置，后续会单独开一篇文章<br>也可以采用<code>4</code>比较简便，像下面这样，更复杂的配置可以参考<a href="http://mockjs.com/examples.html" target="_blank" rel="external">官网的文档</a><br><img src="/blog/images/fe/mock.png" alt=""></p>
+<p>开发完成后，如果只用一个tomcat那只要把前端的代码丢到项目相应的目录即可，比如<br><img src="/blog/images/fe/spa-tomcat.png" alt=""><br><code>src</code>为后端的代码，我们只需要把我们前端的代码丢到<code>webContent</code>下即可。</p>
 <p>如果是nginx那就更加方便了，把前端代码丢到目录<code>web</code>下，在nginx里配置静态资源（<code>html</code>，<code>js</code>，<code>css</code>）指向<code>web</code>目录，接口代理到后端的服务，甚至连发布都可以是单独的，配置和上面的nginx相类似。</p>
 <p>当然spa有它的优缺点：</p>
 <ul>
@@ -111,247 +211,165 @@
 <li>对服务器的压力会比较小</li>
 <li>由于业务逻辑都在js，所以对开发人员的js要求会稍微高点</li>
 </ul>
-  
-	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/前端/">前端</a>
+      
+    </div>
+    
   </div>
-
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/前端/">前端</a>
-</div>
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://www.chihy.cc/2016/07/21/fe-spa/" data-title="前后端分离方案 - spa | 沉淀 - chihysoa的网站" data-tsina="undefined" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2016/08/03/fe-node/" title="前后端分离方案 - NodeJs">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  前后端分离方案 - NodeJs</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2016/07/21/fe/"  title="前后端分离方案">
- <strong>NEXT:</strong><br/> 
- <span>前后端分离方案
-</span>
-</a>
-</div>
-
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/08/03/fe-node/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          前后端分离方案 - NodeJs
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2016/07/21/fe/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前后端分离方案</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
 </nav>
 
-	
-<section class="comment">
-	
-	<div class="ds-thread" data-title="前后端分离方案 - spa" data-thread-key="fe-spa" data-author-key="chihysoa" data-url="http://www.chihy.cc/post/fe-spa"></div>
-	
-</section>
-
-
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
   
-  </div>
+</article>
 
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-<div id="authorInfo">
-	
-		<div class="author-logo"></div>		
-	
-	<div class="social-list" class="clearfix">
-		
-		
-		
-		
-		
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-</div>
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">Categories</p>
-		<ul>
-		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>7</sup></a></li>
-		
-			<li><a href="/categories/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/categories/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/categories/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
 
 
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/es6/" title="es6">es6<sup>5</sup></a></li>
-		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>2</sup></a></li>
-		
-			<li><a href="/tags/node/" title="node">node<sup>1</sup></a></li>
-		
-			<li><a href="/tags/前端/" title="前端">前端<sup>3</sup></a></li>
-		
-			<li><a href="/tags/工具/" title="工具">工具<sup>1</sup></a></li>
-		
-		</ul>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="fe-spa" data-title="前后端分离方案 - spa" data-url="http://www.chihy.cc/blog/blog/2016/07/21/fe-spa/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chihy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
 </div>
 
 
-</aside>
+
+
 </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 chihysoa
+    	</div>
     </div>
-    <footer></footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
-        
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: '/blog/'
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
 });
 </script>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"chihy"};
+  </div>
+</body>
+<script>
+  var _hmt = _hmt || [];
   (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
   })();
-</script> 
 
-
-
-
-  </body>
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+</script>
 </html>
-
