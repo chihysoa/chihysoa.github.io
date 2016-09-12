@@ -3,29 +3,32 @@
 <head>
   <meta charset="utf-8">
   
-  <title>linux下安装nodejs | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>js操作cookie | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="node">
-  <meta name="description" content="作为一个程序员，linux系统必须要会折腾，作为一前端nodejs&amp;#39;必须要研究，给大家科普下linux下安装nodejs，linux下安装nodejs`有三种方式，下面分别对这三种方式一一介绍">
+  <meta name="keywords" content="javascript">
+  <meta name="description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux下安装nodejs">
-<meta property="og:url" content="https://chihysoa.github.io/2016/09/10/node/node-install/index.html">
+<meta property="og:title" content="js操作cookie">
+<meta property="og:url" content="https://chihysoa.github.io/2016/09/12/js/cookie/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="作为一个程序员，linux系统必须要会折腾，作为一前端nodejs&amp;#39;必须要研究，给大家科普下linux下安装nodejs，linux下安装nodejs`有三种方式，下面分别对这三种方式一一介绍">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/node/install/nodejs.png">
-<meta property="og:updated_time" content="2016-09-12T04:15:22.860Z">
+<meta property="og:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
+<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
+<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/get.png">
+<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/set.png">
+<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/clear.png">
+<meta property="og:updated_time" content="2016-09-12T11:03:19.148Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux下安装nodejs">
-<meta name="twitter:description" content="作为一个程序员，linux系统必须要会折腾，作为一前端nodejs&amp;#39;必须要研究，给大家科普下linux下安装nodejs，linux下安装nodejs`有三种方式，下面分别对这三种方式一一介绍">
-<meta name="twitter:image" content="https://chihysoa.github.io/blog/images/node/install/nodejs.png">
+<meta name="twitter:title" content="js操作cookie">
+<meta name="twitter:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
+<meta name="twitter:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;作为一个程序员，&lt;code&gt;linux&lt;/code&gt;系统必须要会折腾，作为一前端&lt;code&gt;nodejs&amp;#39;必须要研究，给大家科普下&lt;/code&gt;linux&lt;code&gt;下安装&lt;/code&gt;nodejs&lt;code&gt;，&lt;/code&gt;linux&lt;code&gt;下安装&lt;/code&gt;nodejs`有三种方式，下面分别对这三种方式一一介绍&lt;/p&gt;">
+  <meta name="summary" content="&lt;p&gt;在项目中经常会遇到需要操作&lt;code&gt;cookie&lt;/code&gt;的情况，简单对操作&lt;code&gt;cookie&lt;/code&gt;做一些介绍&lt;/p&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -89,7 +92,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">linux下安装nodejs</div>
+        <div class="flex-col header-title ellipsis">js操作cookie</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -110,15 +113,15 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">linux下安装nodejs</h1>
+    <h1 class="author">js操作cookie</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-09-10T06:24:23.000Z" itemprop="datePublished" class="page-time">
-  2016-09-10
+            <time datetime="2016-09-12T11:03:32.000Z" itemprop="datePublished" class="page-time">
+  2016-09-12
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/node/">node</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
 
         
     </h5>
@@ -126,11 +129,11 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-node/node-install" 
+      <article id="post-js/cookie" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meat flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -177,7 +180,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第一种（直接法）"><span class="post-toc-text">第一种（直接法）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第二种（源码编译）"><span class="post-toc-text">第二种（源码编译）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三中（apt-get）"><span class="post-toc-text">第三中（apt-get）</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#读取cookie"><span class="post-toc-text">读取cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#设置cookie"><span class="post-toc-text">设置cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#删除cookie"><span class="post-toc-text">删除cookie</span></a></li></ol>
             </nav>
             
         </aside>
@@ -185,26 +188,19 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>作为一个程序员，<code>linux</code>系统必须要会折腾，作为一前端<code>nodejs&#39;必须要研究，给大家科普下</code>linux<code>下安装</code>nodejs<code>，</code>linux<code>下安装</code>nodejs`有三种方式，下面分别对这三种方式一一介绍</p>
+            <p>在项目中经常会遇到需要操作<code>cookie</code>的情况，简单对操作<code>cookie</code>做一些介绍</p>
 <a id="more"></a>
-<p>首先到<a href="https://nodejs.org" target="_blank" rel="external">官网下载–&gt;</a><br><img src="/blog/images/node/install/nodejs.png" alt=""></p>
-<h1 id="第一种（直接法）"><a href="#第一种（直接法）" class="headerlink" title="第一种（直接法）"></a>第一种（直接法）</h1><p>个人这种方式比较简单</p>
-<p>  <em>下载编译好的二件制文件包<code>Linux Binaries (.tar.xz)</code></em><br>  <em>下载完成后解压文件到某个你喜欢的目录<code>node-x.x</code></em><br>  <em>将<code>node-x.x/bin</code>路径加到系统<code>PATH</code>里面</em><br>  <em>开始使用</em><br>恩,就是这么简单。</p>
-<h1 id="第二种（源码编译）"><a href="#第二种（源码编译）" class="headerlink" title="第二种（源码编译）"></a>第二种（源码编译）</h1><p>这种方式需要<code>python</code>支持</p>
-<pre><code>*这次下载的文件包不一样，下载的是源码文件包`Source Code`*
-*下载完成后解压文件到某个你喜欢的目录`node-x.x`*
-*`cd node-x.x`进入nodejs的源码目录*
-*&apos;./configure&apos;*
-*&apos;sudo make &amp;&amp; make install`*
-*等待编译完毕就ok了&apos;*
-</code></pre><p>注：如果都执行完毕后<code>node</code>命令无效，可能是<code>node</code>未加入到环境变量，可以尝试执行<code>cp /usr/local/bin/node /usr/sbin/</code></p>
-<h1 id="第三中（apt-get）"><a href="#第三中（apt-get）" class="headerlink" title="第三中（apt-get）"></a>第三中（apt-get）</h1><p>这种方法仅限于<code>ubuntu/debian</code>的<code>linux</code>系统<br>一次执行下面的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#sudo apt-get install -y python-software-properties software-properties-common  </div><div class="line">#sudo add-apt-repository ppa:chris-lea/node.js  </div><div class="line">#sudo apt-get update  </div><div class="line">#sudo apt-get install nodejs  </div><div class="line">#sudo apt-get install npm</div></pre></td></tr></table></figure></p>
-<p>不过强烈不推荐这种方式，一无法自己选择版本，二来安装出现问题还无从下手</p>
+<h1 id="读取cookie"><a href="#读取cookie" class="headerlink" title="读取cookie"></a>读取cookie</h1><p>很简单，大家看下cookie的结构就能知道<br><img src="/blog/images/js/cookie/cookie.png" alt=""><br><code>document.cookie</code>返回的是一串字符串，每个<code>cookie</code>之间用<code>;</code>隔开，每个<code>cookie</code>又是个键值对，用<code>=</code>分隔。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">function getCookie(cname) &#123;</div><div class="line">    var name = cname + &quot;=&quot;;</div><div class="line">    var ca = document.cookie.split(&apos;;&apos;);</div><div class="line">    for(var i=0; i&lt;ca.length; i++) &#123;</div><div class="line">        var c = ca[i];</div><div class="line">        while (c.charAt(0)==&apos;&apos;) &#123;</div><div class="line">            c = c.substring(1);</div><div class="line">        &#125;</div><div class="line">        if (c.indexOf(name) != -1)&#123;</div><div class="line">            return c.substring(name.length+1, c.length);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return &quot;&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>我们用上面的方法获取一下<code>cookie</code>里面的<code>a</code>的值<br><img src="/blog/images/js/cookie/get.png" alt=""></p>
+<h1 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h1><p>设置cookie也很简单，像上面<code>document.cookie</code>拿到了所以的<code>cookie</code>，设置的话,我们直接用<code>document.cookie=&quot;key=value&quot;</code>就可以，并且我们可以给定这个<code>cookie</code>的过期时间用<code>expires</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function setCookie(cname, cvalue, exdays) &#123;</div><div class="line">    var d = new Date();</div><div class="line">    d.setTime(d.getTime() + (exdays*24*60*60*1000));</div><div class="line">    var expires = &quot;expires=&quot;+d.toUTCString();</div><div class="line">    document.cookie = cname + &quot;=&quot; + cvalue + &quot;; &quot; + expires;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="/blog/images/js/cookie/set.png" alt=""><br>注意，设置<code>cookie</code>的时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，如果允许的话。如果没有给<code>cookie</code>设置过期时间，那么这个<code>cookie</code>值只在当然会话有效，也就是说浏览器关闭失效。</p>
+<h1 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie"></a>删除cookie</h1><p>上面说到的设置<code>cookie</code>时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，而我们在设置<code>cookie</code>的时候有可以设置过期时间，那么利用这两点，我们就可以进行<code>cookie</code>的删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function clearCookie(name) &#123;  </div><div class="line">    setCookie(name, &quot;&quot;, -1);  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="/blog/images/js/cookie/clear.png" alt=""></p>
 
             <blockquote>
                 <p>
                 本文地址：
-                <a href="https://chihysoa.github.io/2016/09/10/node/node-install/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/10/node/node-install/</a>
+                <a href="https://chihysoa.github.io/2016/09/12/js/cookie/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/12/js/cookie/</a>
                 </p>
                 <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
             </blockquote>
@@ -212,19 +208,12 @@
             
 <nav class="post-nav">
   
-    <div class="waves-block waves-effect prev fl">
-      <a href="/2016/09/10/node/node-path/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">linux设置环境变量</h4>
-      </a>
-    </div>
-  
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/09/06/es6_4/" id="post-next" class="post-nav-link">
+      <a href="/2016/09/10/node/node-path/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">es6入门--模块化</h4>
+        <h4 class="title">linux设置环境变量</h4>
       </a>
     </div>
   
@@ -235,7 +224,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="node/node-install" data-title="linux下安装nodejs" data-url="https://chihysoa.github.io/2016/09/10/node/node-install/index.html"></div>
+	<div class="ds-thread" data-thread-key="js/cookie" data-title="js操作cookie" data-url="https://chihysoa.github.io/2016/09/12/js/cookie/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -266,10 +255,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "linux下安装nodejs",
+    title: "js操作cookie",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "https://chihysoa.github.io/2016/09/10/node/node-install/index.html"
+    url: "https://chihysoa.github.io/2016/09/12/js/cookie/index.html"
 };
 </script>
 <div class="global-share" id="global-share">
