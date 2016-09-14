@@ -3,32 +3,59 @@
 <head>
   <meta charset="utf-8">
   
-  <title>javascript操作cookie | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>前后端分离方案 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="javascript">
-  <meta name="description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
+  <meta name="keywords" content="前端">
+  <meta name="description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
+前后端分离的优点有很多，这里随便提几点：
+
+不分离的情况下前后端职责不清
+前后端各尽其职可以最大程度的减少开发难度，加快效率
+前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
+前后端代码解耦，一个后端代码可以提供给多个前端使用
+
+那么说说现阶段我所接触过，使用过">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript操作cookie">
-<meta property="og:url" content="https://chihysoa.github.io/2016/09/12/js/cookie/index.html">
+<meta property="og:title" content="前后端分离方案">
+<meta property="og:url" content="https://chihysoa.github.io/2016/07/21/fe/fe/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/get.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/set.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/clear.png">
-<meta property="og:updated_time" content="2016-09-14T04:32:15.025Z">
+<meta property="og:description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
+前后端分离的优点有很多，这里随便提几点：
+
+不分离的情况下前后端职责不清
+前后端各尽其职可以最大程度的减少开发难度，加快效率
+前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
+前后端代码解耦，一个后端代码可以提供给多个前端使用
+
+那么说说现阶段我所接触过，使用过">
+<meta property="og:updated_time" content="2016-09-14T04:30:18.952Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript操作cookie">
-<meta name="twitter:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
-<meta name="twitter:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
+<meta name="twitter:title" content="前后端分离方案">
+<meta name="twitter:description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
+前后端分离的优点有很多，这里随便提几点：
+
+不分离的情况下前后端职责不清
+前后端各尽其职可以最大程度的减少开发难度，加快效率
+前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
+前后端代码解耦，一个后端代码可以提供给多个前端使用
+
+那么说说现阶段我所接触过，使用过">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;在项目中经常会遇到需要操作&lt;code&gt;cookie&lt;/code&gt;的情况，简单对操作&lt;code&gt;cookie&lt;/code&gt;做一些介绍&lt;/p&gt;">
+  <meta name="summary" content="&lt;p&gt;前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。&lt;/p&gt;
+&lt;p&gt;前后端分离的优点有很多，这里随便提几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不分离的情况下前后端职责不清&lt;/li&gt;
+&lt;li&gt;前后端各尽其职可以最大程度的减少开发难度，加快效率&lt;/li&gt;
+&lt;li&gt;前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等&lt;/li&gt;
+&lt;li&gt;前后端代码解耦，一个后端代码可以提供给多个前端使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;那么说说现阶段我所接触过，使用过的前后端分离方案。&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -92,7 +119,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">javascript操作cookie</div>
+        <div class="flex-col header-title ellipsis">前后端分离方案</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -113,15 +140,15 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">javascript操作cookie</h1>
+    <h1 class="author">前后端分离方案</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-09-12T11:03:32.000Z" itemprop="datePublished" class="page-time">
-  2016-09-12
+            <time datetime="2016-07-21T07:24:52.000Z" itemprop="datePublished" class="page-time">
+  2016-07-21
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端/">前端</a></li></ul>
 
         
     </h5>
@@ -129,11 +156,11 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-js/cookie" 
+      <article id="post-fe/fe" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meat flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -180,7 +207,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#读取cookie"><span class="post-toc-text">读取cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#设置cookie"><span class="post-toc-text">设置cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#删除cookie"><span class="post-toc-text">删除cookie</span></a></li></ol>
+            
             </nav>
             
         </aside>
@@ -188,19 +215,27 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>在项目中经常会遇到需要操作<code>cookie</code>的情况，简单对操作<code>cookie</code>做一些介绍</p>
-<a id="more"></a>
-<h1 id="读取cookie"><a href="#读取cookie" class="headerlink" title="读取cookie"></a>读取cookie</h1><p>很简单，大家看下cookie的结构就能知道<br><img src="/blog/images/js/cookie/cookie.png" alt=""><br><code>document.cookie</code>返回的是一串字符串，每个<code>cookie</code>之间用<code>;</code>隔开，每个<code>cookie</code>又是个键值对，用<code>=</code>分隔。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">cname</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> name = cname + <span class="string">"="</span>;</div><div class="line">    <span class="keyword">var</span> ca = <span class="built_in">document</span>.cookie.split(<span class="string">';'</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;ca.length; i++) &#123;</div><div class="line">        <span class="keyword">var</span> c = ca[i];</div><div class="line">        <span class="keyword">while</span> (c.charAt(<span class="number">0</span>)==<span class="string">''</span>) &#123;</div><div class="line">            c = c.substring(<span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (c.indexOf(name) != <span class="number">-1</span>)&#123;</div><div class="line">            <span class="keyword">return</span> c.substring(name.length+<span class="number">1</span>, c.length);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>我们用上面的方法获取一下<code>cookie</code>里面的<code>a</code>的值<br><img src="/blog/images/js/cookie/get.png" alt=""></p>
-<h1 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h1><p>设置cookie也很简单，像上面<code>document.cookie</code>拿到了所以的<code>cookie</code>，设置的话,我们直接用<code>document.cookie=&quot;key=value&quot;</code>就可以，并且我们可以给定这个<code>cookie</code>的过期时间用<code>expires</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">cname, cvalue, exdays</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">    d.setTime(d.getTime() + (exdays*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>));</div><div class="line">    <span class="keyword">var</span> expires = <span class="string">"expires="</span>+d.toUTCString();</div><div class="line">    <span class="built_in">document</span>.cookie = cname + <span class="string">"="</span> + cvalue + <span class="string">"; "</span> + expires;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="/blog/images/js/cookie/set.png" alt=""><br>注意，设置<code>cookie</code>的时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，如果允许的话。如果没有给<code>cookie</code>设置过期时间，那么这个<code>cookie</code>值只在当然会话有效，也就是说浏览器关闭失效。</p>
-<h1 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie"></a>删除cookie</h1><p>上面说到的设置<code>cookie</code>时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，而我们在设置<code>cookie</code>的时候有可以设置过期时间，那么利用这两点，我们就可以进行<code>cookie</code>的删除<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">clearCookie</span>(<span class="params">name</span>) </span>&#123;  </div><div class="line">    setCookie(name, <span class="string">""</span>, <span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="/blog/images/js/cookie/clear.png" alt=""></p>
+            <p>前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。</p>
+<p>前后端分离的优点有很多，这里随便提几点：</p>
+<ul>
+<li>不分离的情况下前后端职责不清</li>
+<li>前后端各尽其职可以最大程度的减少开发难度，加快效率</li>
+<li>前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等</li>
+<li>前后端代码解耦，一个后端代码可以提供给多个前端使用</li>
+</ul>
+<p>那么说说现阶段我所接触过，使用过的前后端分离方案。<br><a id="more"></a><br>现阶段我所熟知的前后端分离方案有三种</p>
+<ul>
+<li>spa单页应用</li>
+<li>基于nodejs前后端分离方案<!-- * 基于传统模式(jsp/velocity)的前后端分离方案 -->
+</li>
+</ul>
+<p>下面说说各种方案的实现方式，这里后端以java为例</p>
+<p><a href="/blog/2016/07/21/fe/fe-spa/">spa单页应用方案</a><br><a href="/blog/2016/08/03/fe/fe-node/">基于nodejs前后端分离方案</a><br><!-- [基于传统模式(jsp/velocity)的前后端分离方案](/2016/07/21/fe-jsp/) --></p>
 
             <blockquote>
                 <p>
                 本文地址：
-                <a href="https://chihysoa.github.io/2016/09/12/js/cookie/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/12/js/cookie/</a>
+                <a href="https://chihysoa.github.io/2016/07/21/fe/fe/" target="_blank" rel="external">https://chihysoa.github.io/2016/07/21/fe/fe/</a>
                 </p>
                 <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
             </blockquote>
@@ -209,18 +244,18 @@
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/2016/09/13/js/scope/" id="post-prev" class="post-nav-link">
+      <a href="/2016/07/21/fe/fe-spa/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">javascript变量作用域、作用域链</h4>
+        <h4 class="title">前后端分离方案 - spa</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/09/10/linux/path/" id="post-next" class="post-nav-link">
+      <a href="/2016/07/20/tool/git/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">linux设置环境变量</h4>
+        <h4 class="title">项目版本管理 - git基本操作</h4>
       </a>
     </div>
   
@@ -231,7 +266,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="js/cookie" data-title="javascript操作cookie" data-url="https://chihysoa.github.io/2016/09/12/js/cookie/index.html"></div>
+	<div class="ds-thread" data-thread-key="fe/fe" data-title="前后端分离方案" data-url="https://chihysoa.github.io/2016/07/21/fe/fe/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -262,10 +297,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "javascript操作cookie",
+    title: "前后端分离方案",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "https://chihysoa.github.io/2016/09/12/js/cookie/index.html"
+    url: "https://chihysoa.github.io/2016/07/21/fe/fe/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

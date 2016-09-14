@@ -3,32 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>javascript操作cookie | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>es6入门--class | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="javascript">
-  <meta name="description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
+  <meta name="keywords" content="es6">
+  <meta name="description" content="js中，function的概念既是方法也是类，所以在es6之前创建一个类就是通过定义function来实现，然后通过new这个function来创建实例。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript操作cookie">
-<meta property="og:url" content="https://chihysoa.github.io/2016/09/12/js/cookie/index.html">
+<meta property="og:title" content="es6入门--class">
+<meta property="og:url" content="https://chihysoa.github.io/2016/09/06/js/es6_5/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/get.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/set.png">
-<meta property="og:image" content="https://chihysoa.github.io/blog/images/js/cookie/clear.png">
-<meta property="og:updated_time" content="2016-09-14T04:32:15.025Z">
+<meta property="og:description" content="js中，function的概念既是方法也是类，所以在es6之前创建一个类就是通过定义function来实现，然后通过new这个function来创建实例。">
+<meta property="og:updated_time" content="2016-09-14T04:22:45.075Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript操作cookie">
-<meta name="twitter:description" content="在项目中经常会遇到需要操作cookie的情况，简单对操作cookie做一些介绍">
-<meta name="twitter:image" content="https://chihysoa.github.io/blog/images/js/cookie/cookie.png">
+<meta name="twitter:title" content="es6入门--class">
+<meta name="twitter:description" content="js中，function的概念既是方法也是类，所以在es6之前创建一个类就是通过定义function来实现，然后通过new这个function来创建实例。">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;在项目中经常会遇到需要操作&lt;code&gt;cookie&lt;/code&gt;的情况，简单对操作&lt;code&gt;cookie&lt;/code&gt;做一些介绍&lt;/p&gt;">
+  <meta name="summary" content="&lt;p&gt;&lt;code&gt;js&lt;/code&gt;中，&lt;code&gt;function&lt;/code&gt;的概念既是方法也是类，所以在&lt;code&gt;es6&lt;/code&gt;之前创建一个类就是通过定义&lt;code&gt;function&lt;/code&gt;来实现，然后通过&lt;code&gt;new&lt;/code&gt;这个&lt;code&gt;function&lt;/code&gt;来创建实例。&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -92,7 +87,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">javascript操作cookie</div>
+        <div class="flex-col header-title ellipsis">es6入门--class</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -113,11 +108,11 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">javascript操作cookie</h1>
+    <h1 class="author">es6入门--class</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-09-12T11:03:32.000Z" itemprop="datePublished" class="page-time">
-  2016-09-12
+            <time datetime="2016-09-06T14:27:32.000Z" itemprop="datePublished" class="page-time">
+  2016-09-06
 </time>
 
 
@@ -129,11 +124,11 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-js/cookie" 
+      <article id="post-js/es6_5" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meat flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -180,7 +175,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#读取cookie"><span class="post-toc-text">读取cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#设置cookie"><span class="post-toc-text">设置cookie</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#删除cookie"><span class="post-toc-text">删除cookie</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#定义"><span class="post-toc-text">定义</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#constructor-NaN"><span class="post-toc-text">constructor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#class表达式"><span class="post-toc-text">class表达式</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#继承"><span class="post-toc-text">继承</span></a></li></ol>
             </nav>
             
         </aside>
@@ -188,19 +183,19 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>在项目中经常会遇到需要操作<code>cookie</code>的情况，简单对操作<code>cookie</code>做一些介绍</p>
-<a id="more"></a>
-<h1 id="读取cookie"><a href="#读取cookie" class="headerlink" title="读取cookie"></a>读取cookie</h1><p>很简单，大家看下cookie的结构就能知道<br><img src="/blog/images/js/cookie/cookie.png" alt=""><br><code>document.cookie</code>返回的是一串字符串，每个<code>cookie</code>之间用<code>;</code>隔开，每个<code>cookie</code>又是个键值对，用<code>=</code>分隔。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCookie</span>(<span class="params">cname</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> name = cname + <span class="string">"="</span>;</div><div class="line">    <span class="keyword">var</span> ca = <span class="built_in">document</span>.cookie.split(<span class="string">';'</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;ca.length; i++) &#123;</div><div class="line">        <span class="keyword">var</span> c = ca[i];</div><div class="line">        <span class="keyword">while</span> (c.charAt(<span class="number">0</span>)==<span class="string">''</span>) &#123;</div><div class="line">            c = c.substring(<span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (c.indexOf(name) != <span class="number">-1</span>)&#123;</div><div class="line">            <span class="keyword">return</span> c.substring(name.length+<span class="number">1</span>, c.length);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>我们用上面的方法获取一下<code>cookie</code>里面的<code>a</code>的值<br><img src="/blog/images/js/cookie/get.png" alt=""></p>
-<h1 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h1><p>设置cookie也很简单，像上面<code>document.cookie</code>拿到了所以的<code>cookie</code>，设置的话,我们直接用<code>document.cookie=&quot;key=value&quot;</code>就可以，并且我们可以给定这个<code>cookie</code>的过期时间用<code>expires</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">cname, cvalue, exdays</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">    d.setTime(d.getTime() + (exdays*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>));</div><div class="line">    <span class="keyword">var</span> expires = <span class="string">"expires="</span>+d.toUTCString();</div><div class="line">    <span class="built_in">document</span>.cookie = cname + <span class="string">"="</span> + cvalue + <span class="string">"; "</span> + expires;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="/blog/images/js/cookie/set.png" alt=""><br>注意，设置<code>cookie</code>的时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，如果允许的话。如果没有给<code>cookie</code>设置过期时间，那么这个<code>cookie</code>值只在当然会话有效，也就是说浏览器关闭失效。</p>
-<h1 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie"></a>删除cookie</h1><p>上面说到的设置<code>cookie</code>时候，如果<code>cookie</code>中已经存在的相同<code>key</code>的值给覆盖掉，而我们在设置<code>cookie</code>的时候有可以设置过期时间，那么利用这两点，我们就可以进行<code>cookie</code>的删除<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">clearCookie</span>(<span class="params">name</span>) </span>&#123;  </div><div class="line">    setCookie(name, <span class="string">""</span>, <span class="number">-1</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="/blog/images/js/cookie/clear.png" alt=""></p>
+            <p><code>js</code>中，<code>function</code>的概念既是方法也是类，所以在<code>es6</code>之前创建一个类就是通过定义<code>function</code>来实现，然后通过<code>new</code>这个<code>function</code>来创建实例。<br><a id="more"></a><br>比如我要创建<code>Person</code>这个类<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">&#125;</div><div class="line">Person.prototype.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'hello '</span>+<span class="keyword">this</span>.name)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> jack = <span class="keyword">new</span> Person(<span class="string">'jack'</span>);</div></pre></td></tr></table></figure></p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>es6中为了方便类的创建和更加清晰引入了class这个概念。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name)&#123;</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    say()&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'hello '</span>+<span class="keyword">this</span>.name)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> jack = <span class="keyword">new</span> Person(<span class="string">'jack'</span>);</div></pre></td></tr></table></figure></p>
+<p>在<code>es6</code>中，<code>class</code>其实只是一个语法糖，并不是真正的类<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> Person;<span class="comment">//function</span></div><div class="line">Person === Person.prototype.constructor <span class="comment">// true</span></div></pre></td></tr></table></figure></p>
+<p>注意，定义类的方法的时候，前面不需要加上<code>function</code>这个关键字，直接把函数定义放进去了就可以了。另外，方法之间不需要逗号分隔。还有，虽然<code>class</code>只是个语法糖，<code>typeof Person;</code>返回的也是一个<code>function</code>但是，直接调用<code>Person</code>还是会报错，使用class不存在变量的提升。</p>
+<h1 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h1><p><code>constructor</code>方法是类的默认方法，也就是构造器，通过<code>new</code>来创建对象实例时，会调用该方法。一个类必须有<code>constructor</code>方法，如果没有显式定义，一个空的<code>constructor</code>方法会被添加。</p>
+<h1 id="class表达式"><a href="#class表达式" class="headerlink" title="class表达式"></a>class表达式</h1><p><code>class</code>还可以赋值给一个变量<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> p = <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name)&#123;</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    say()&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'hello '</span>+<span class="keyword">this</span>.name)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>既然谈到<code>class</code>，那就少不了继承，<code>es6</code>之后，继承也方便了很多<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Worker</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name)&#123;</div><div class="line">        <span class="keyword">super</span>(name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">new</span> Worker(<span class="string">'jack'</span>).say();<span class="comment">//hello jack</span></div></pre></td></tr></table></figure></p>
+<p>需要注意的是在子类的<code>constructor</code>里面，需要调用父类的<code>constructor</code>，通过<code>super</code>来调用。</p>
 
             <blockquote>
                 <p>
                 本文地址：
-                <a href="https://chihysoa.github.io/2016/09/12/js/cookie/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/12/js/cookie/</a>
+                <a href="https://chihysoa.github.io/2016/09/06/js/es6_5/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/06/js/es6_5/</a>
                 </p>
                 <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
             </blockquote>
@@ -209,18 +204,18 @@
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/2016/09/13/js/scope/" id="post-prev" class="post-nav-link">
+      <a href="/2016/09/10/node/linux-install/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">javascript变量作用域、作用域链</h4>
+        <h4 class="title">linux下安装nodejs</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/09/10/linux/path/" id="post-next" class="post-nav-link">
+      <a href="/2016/09/06/js/es6_4/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">linux设置环境变量</h4>
+        <h4 class="title">es6入门--模块化</h4>
       </a>
     </div>
   
@@ -231,7 +226,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="js/cookie" data-title="javascript操作cookie" data-url="https://chihysoa.github.io/2016/09/12/js/cookie/index.html"></div>
+	<div class="ds-thread" data-thread-key="js/es6_5" data-title="es6入门--class" data-url="https://chihysoa.github.io/2016/09/06/js/es6_5/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -262,10 +257,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "javascript操作cookie",
+    title: "es6入门--class",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "https://chihysoa.github.io/2016/09/12/js/cookie/index.html"
+    url: "https://chihysoa.github.io/2016/09/06/js/es6_5/index.html"
 };
 </script>
 <div class="global-share" id="global-share">

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>es6入门--集合 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="es6">
+  <meta name="description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6入门--集合">
+<meta property="og:url" content="https://chihysoa.github.io/2016/09/06/js/es6_3/index.html">
+<meta property="og:site_name" content="沉淀 - chihysoa的网站">
+<meta property="og:description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+<meta property="og:updated_time" content="2016-09-14T04:24:29.703Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="es6入门--集合">
+<meta name="twitter:description" content="MapMap类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。Map有如下属性和方法">
+  
+    <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
+  
+  <meta name="summary" content="&lt;h1 id=&quot;Map&quot;&gt;&lt;a href=&quot;#Map&quot; class=&quot;headerlink&quot; title=&quot;Map&quot;&gt;&lt;/a&gt;Map&lt;/h1&gt;&lt;p&gt;Map类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。&lt;br&gt;Map有如下属性和方法&lt;br&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/logo.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">chihysoa</h5>
+        <a href="mailto:undefined" title="chihysoa@163.com" class="mail">chihysoa@163.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            文章
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/chihysoa" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <!-- <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>沉淀 - chihysoa的网站 &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> -->
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">es6入门--集合</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">es6入门--集合</h1>
+    <h5 class="subtitle">
+        
+            <time datetime="2016-09-06T12:27:24.000Z" itemprop="datePublished" class="page-time">
+  2016-09-06
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+
+        
+    </h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      <article id="post-js/es6_3" 
+  class="article article-type-post" itemprop="blogPost">
+    <div class="post-meat flex-row">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+
+    </div>
+    <div class="post-body">
+        <aside class="post-widget" id="post-widget">
+
+            
+            <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+            
+
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Map"><span class="post-toc-text">Map</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Set"><span class="post-toc-text">Set</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#WeakSet-WeakMap"><span class="post-toc-text">WeakSet/WeakMap</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Iterator和for…of循环"><span class="post-toc-text">Iterator和for…of循环</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Iterator-遍历器"><span class="post-toc-text">Iterator(遍历器)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#for…of"><span class="post-toc-text">for…of</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Generator-函数"><span class="post-toc-text">Generator 函数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建"><span class="post-toc-text">创建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#yield"><span class="post-toc-text">yield</span></a></li></ol></li></ol>
+            </nav>
+            
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><p>Map类似于js的Object。Object只能使用字符串和Symbol作为key值，但是Map可以把任意的数据格式作为key值。<br>Map有如下属性和方法<br><a id="more"></a><br><em>put(key,value)：添加某个值，返回Set结构本身。</em><br><em>get(key)：返回对象的值，不存在则为undefined</em><br><em>delete(key)：删除某个值，返回一个布尔值，表示删除是否成功。</em><br><em>has(key)：返回一个布尔值，表示该值是否存在。</em><br><em>clear()：清除所有成员，没有返回值。</em><br><em>size：返回集合大小。</em></p>
+<p>Map有四个遍历方法<br><em>keys()：返回键名的遍历器。</em><br><em>values()：返回键值的遍历器。</em><br><em>entries()：返回所有成员的遍历器。</em><br><em>forEach()：遍历Map的所有成员。</em></p>
+<h1 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h1><p>Set是一个新的数据结构，类似于数组，不同的是，它里面的元素是唯一的，不重复的。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line">s.add(<span class="number">1</span>);</div><div class="line">s.add(<span class="number">2</span>);</div><div class="line">s.add(<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(...s);<span class="comment">// [1,2]</span></div></pre></td></tr></table></figure></p>
+<p>也可以直接通过一个数组来创建Set<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> s=<span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>]);</div></pre></td></tr></table></figure></p>
+<p>往Set里面添加元素时候，并不会发生类型的转换所以，5和“5”是两个不同的元素<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line">s.add(<span class="number">5</span>);</div><div class="line">s.add(“<span class="number">5</span>”);</div><div class="line"><span class="built_in">console</span>.log(...s);<span class="comment">// [5，5]</span></div></pre></td></tr></table></figure></p>
+<p>Set有如下属性和方法<br><em>add(value)：添加某个值，返回Set结构本身。</em><br><em>delete(value)：删除某个值，返回一个布尔值，表示删除是否成功。</em><br><em>has(value)：返回一个布尔值，表示该值是否为Set的成员。</em><br><em>clear()：清除所有成员，没有返回值。</em><br><em>size：返回集合大小。</em></p>
+<p>Set有四个遍历方法<br><em>keys()：返回键名的遍历器</em><br><em>values()：返回键值的遍历器</em><br><em>entries()：返回键值对的遍历器</em><br><em>forEach()：使用回调函数遍历每个成员</em></p>
+<h1 id="WeakSet-WeakMap"><a href="#WeakSet-WeakMap" class="headerlink" title="WeakSet/WeakMap"></a>WeakSet/WeakMap</h1><p>弱集合，里面的元素是弱引用，他们不会阻止垃圾回收机制，一旦里面的元素对外不存在引用，垃圾回收机制就会回收里面不用的元素，因此，弱集合不提供遍历的方法而且可以避免内存泄漏。这一设计对于缓存很合适。<br>WeakMap它只接受对象作为键名（null除外），不接受其他类型的值作为键名，而且键名所指向的对象，不计入垃圾回收机制。</p>
+<h1 id="Iterator和for…of循环"><a href="#Iterator和for…of循环" class="headerlink" title="Iterator和for…of循环"></a>Iterator和for…of循环</h1><h2 id="Iterator-遍历器"><a href="#Iterator-遍历器" class="headerlink" title="Iterator(遍历器)"></a>Iterator(遍历器)</h2><p>Iterator，对于用过java的人应该都很熟悉，它是个遍历器，用于遍历集合。<br>js中的Iterator的作用有三个：一是为各种数据结构，提供一个统一的、简便的访问接口；二是使得数据结构的成员能够按某种次序排列；三是ES6创造了一种新的遍历命令for…of循环。<br>Iterator的遍历过程:<br><em>创建一个遍历器对象，指向当前数据结构的起始位置。</em><br><em>第一次调用遍历器对象的next方法，可以将指向数据结构的第一个成员。</em><br><em>第二次调用遍历器对象的next方法，就指向数据结构的第二个成员。</em><br><em>不断调用遍历器对象的next方法，直到它指向数据结构的结束位置。</em><br>之前提到的Set和Map就提供了使用Iterator去遍历的方法。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line">set.add(<span class="number">1</span>);</div><div class="line">set.add(<span class="number">2</span>);</div><div class="line">set.add(<span class="number">3</span>);</div><div class="line"></div><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> it = set.entries(),obj = it.next();!obj.done;obj = it.next())&#123;</div><div class="line">    <span class="built_in">console</span>.log(obj.value)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="for…of"><a href="#for…of" class="headerlink" title="for…of"></a>for…of</h2><p>for…of主要是用来提供给Iterator对象遍历，上面的代码用for…of写起来会简单很多<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line">set.add(<span class="number">1</span>);</div><div class="line">set.add(<span class="number">2</span>);</div><div class="line">set.add(<span class="number">3</span>);</div><div class="line"></div><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> obj <span class="keyword">of</span> set.entries())&#123;</div><div class="line">    <span class="built_in">console</span>.log(obj)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="Generator-函数"><a href="#Generator-函数" class="headerlink" title="Generator 函数"></a>Generator 函数</h1><p>Generator函数是ES6提供的一种异步编程解决方案。从语法上，首先可以把它理解成，Generator函数是一个状态机，封装了多个内部状态。<br>执行Generator函数会返回一个遍历器对象。</p>
+<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>用function后面添加<code>*</code>来定义一个Generator函数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span>* <span class="title">g</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</div><div class="line">        <span class="keyword">yield</span> a++;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> obj <span class="keyword">of</span> g())&#123;</div><div class="line">    <span class="built_in">console</span>.log(obj)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>通过<code>g.constructor；//[Function: GeneratorFunction]</code>可以用来判断一个函数是不是Generator 函数</p>
+<h2 id="yield"><a href="#yield" class="headerlink" title="yield"></a>yield</h2><p>由于Generator函数返回的遍历器对象，只有调用next方法才会遍历下一个内部状态，所以其实提供了一种可以暂停执行的函数。yield语句就是暂停标志。<br><em>1.遇到yield语句，就暂停执行后面的操作，并将紧跟在yield后面的那个表达式的值，作为返回的对象的value属性值。</em><br><em>2.下一次调用next方法时，再继续往下执行，直到遇到下一个yield语句。</em><br><em>3.如果没有再遇到新的yield语句，就一直运行到函数结束，直到return语句为止，并将return语句后面的表达式的值，作为返回的对象的value属性值。</em><br><em>4.如果该函数没有return语句，则返回的对象的value属性值为undefined。</em></p>
+
+            <blockquote>
+                <p>
+                本文地址：
+                <a href="https://chihysoa.github.io/2016/09/06/js/es6_3/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/06/js/es6_3/</a>
+                </p>
+                <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
+            </blockquote>
+            </div>
+            
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/09/06/js/es6_4/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">es6入门--模块化</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/09/05/js/es6_2/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">es6入门--基本扩展(二)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+            
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="js/es6_3" data-title="es6入门--集合" data-url="https://chihysoa.github.io/2016/09/06/js/es6_3/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"chihy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</article>
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "es6入门--集合",
+    pic: "/img/logo.jpg",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "https://chihysoa.github.io/2016/09/06/js/es6_3/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</script>
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

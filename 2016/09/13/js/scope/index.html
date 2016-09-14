@@ -3,32 +3,32 @@
 <head>
   <meta charset="utf-8">
   
-  <title>js变量作用域、作用域链 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>javascript变量作用域、作用域链 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
   <meta name="keywords" content="javascript">
-  <meta name="description" content="在js存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
+  <meta name="description" content="在javascript存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js变量作用域、作用域链">
+<meta property="og:title" content="javascript变量作用域、作用域链">
 <meta property="og:url" content="https://chihysoa.github.io/2016/09/13/js/scope/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="在js存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
+<meta property="og:description" content="在javascript存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/js/scope/chain1.png">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/js/scope/chain2.png">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/js/scope/chain3.png">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/js/scope/chain4.png">
-<meta property="og:updated_time" content="2016-09-13T07:09:04.983Z">
+<meta property="og:updated_time" content="2016-09-14T04:20:44.078Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js变量作用域、作用域链">
-<meta name="twitter:description" content="在js存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
+<meta name="twitter:title" content="javascript变量作用域、作用域链">
+<meta name="twitter:description" content="在javascript存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是window下，nodejs为global。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。">
 <meta name="twitter:image" content="https://chihysoa.github.io/blog/images/js/scope/chain1.png">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;在&lt;code&gt;js&lt;/code&gt;存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是&lt;code&gt;window&lt;/code&gt;下，&lt;code&gt;nodejs&lt;/code&gt;为&lt;code&gt;global&lt;/code&gt;。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。&lt;br&gt;">
+  <meta name="summary" content="&lt;p&gt;在&lt;code&gt;javascript&lt;/code&gt;存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是&lt;code&gt;window&lt;/code&gt;下，&lt;code&gt;nodejs&lt;/code&gt;为&lt;code&gt;global&lt;/code&gt;。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -92,7 +92,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">js变量作用域、作用域链</div>
+        <div class="flex-col header-title ellipsis">javascript变量作用域、作用域链</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -113,7 +113,7 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">js变量作用域、作用域链</h1>
+    <h1 class="author">javascript变量作用域、作用域链</h1>
     <h5 class="subtitle">
         
             <time datetime="2016-09-13T07:09:32.000Z" itemprop="datePublished" class="page-time">
@@ -188,16 +188,16 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>在<code>js</code>存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是<code>window</code>下，<code>nodejs</code>为<code>global</code>。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。<br><a id="more"></a></p>
-<h1 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h1><p>在任何地方都能访问到的对象拥有全局作用域。<br>一般情况下，用下面这几种方式创建的对象拥有全局作用域：<br>（1）在全局作用域（最外层函数外）下定义的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var name = &apos;name&apos;;</div><div class="line">function deal()&#123;</div><div class="line">    console.log(name);</div><div class="line">    var innerName = &apos;innerName&apos;;</div><div class="line">    function innerFn()&#123;</div><div class="line">        console.log(name);</div><div class="line">    &#125;</div><div class="line">    innerFn();</div><div class="line">&#125;</div><div class="line">console.log(name);//name</div><div class="line">deal();//name</div><div class="line">console.log(innerName);//报错</div><div class="line">innerFn();//报错</div></pre></td></tr></table></figure></p>
-<p>（2）未声明的变量直接赋值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function deal()&#123;</div><div class="line">    name = &apos;name&apos;;</div><div class="line">&#125;</div><div class="line">deal();</div><div class="line">console.log(name);//name</div></pre></td></tr></table></figure></p>
-<p>（3）window(nodejs为global)对象的属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function deal()&#123;</div><div class="line">    window.a = 1;</div><div class="line">&#125;</div><div class="line">deal();</div><div class="line">console.log(a);//1</div></pre></td></tr></table></figure></p>
-<h1 id="局部作用域"><a href="#局部作用域" class="headerlink" title="局部作用域"></a>局部作用域</h1><p>局部作用域和全局作用域相反，局部作用域一般称为函数作用域，只在函数内部有效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function deal()&#123;</div><div class="line">    var name = &apos;name&apos;;</div><div class="line">    console.log(name);</div><div class="line">&#125;</div><div class="line">dela();//name</div><div class="line">console.log(name);//报错</div></pre></td></tr></table></figure></p>
-<h1 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h1><p>在<code>js</code>中，一切都是对象所以函数也是对象。函数对象和其它对象一样，拥有可以通过代码访问的属性和一些仅供<code>js</code>引擎访问的内部属性，其中一个内部属性是[[Scope]]。[[Scope]]属性包含了函数被创建的作用域中对象的集合，这个集合被称为函数的作用域链，它决定了哪些数据能被函数访问。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function deal(a,b)&#123;</div><div class="line">    var result = &quot;abc&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>当函数deal创建时，该函数创建了[[Scope]]属性，并且创建了一个作用域链，作用域链中只包含一个全局对象(Global Object);<br><img src="/blog/images/js/scope/chain1.png" alt=""><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deal(1,2)</div></pre></td></tr></table></figure></p>
+            <p>在<code>javascript</code>存在两种作用域，全局作用域和局部作用域。全局作用域只有一个，浏览器中就是<code>window</code>下，<code>nodejs</code>为<code>global</code>。局部作用域就是方法（在es6之前，没有块级作用域这么一说）。<br><a id="more"></a></p>
+<h1 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h1><p>在任何地方都能访问到的对象拥有全局作用域。<br>一般情况下，用下面这几种方式创建的对象拥有全局作用域：<br>（1）在全局作用域（最外层函数外）下定义的<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="string">'name'</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(name);</div><div class="line">    <span class="keyword">var</span> innerName = <span class="string">'innerName'</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">innerFn</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(name);</div><div class="line">    &#125;</div><div class="line">    innerFn();</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(name);<span class="comment">//name</span></div><div class="line">deal();<span class="comment">//name</span></div><div class="line"><span class="built_in">console</span>.log(innerName);<span class="comment">//报错</span></div><div class="line">innerFn();<span class="comment">//报错</span></div></pre></td></tr></table></figure></p>
+<p>（2）未声明的变量直接赋值<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    name = <span class="string">'name'</span>;</div><div class="line">&#125;</div><div class="line">deal();</div><div class="line"><span class="built_in">console</span>.log(name);<span class="comment">//name</span></div></pre></td></tr></table></figure></p>
+<p>（3）window(nodejs为global)对象的属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">window</span>.a = <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line">deal();</div><div class="line"><span class="built_in">console</span>.log(a);<span class="comment">//1</span></div></pre></td></tr></table></figure></p>
+<h1 id="局部作用域"><a href="#局部作用域" class="headerlink" title="局部作用域"></a>局部作用域</h1><p>局部作用域和全局作用域相反，局部作用域一般称为函数作用域，只在函数内部有效。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> name = <span class="string">'name'</span>;</div><div class="line">    <span class="built_in">console</span>.log(name);</div><div class="line">&#125;</div><div class="line">dela();<span class="comment">//name</span></div><div class="line"><span class="built_in">console</span>.log(name);<span class="comment">//报错</span></div></pre></td></tr></table></figure></p>
+<h1 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h1><p>在<code>js</code>中，一切都是对象所以函数也是对象。函数对象和其它对象一样，拥有可以通过代码访问的属性和一些仅供<code>js</code>引擎访问的内部属性，其中一个内部属性是[[Scope]]。[[Scope]]属性包含了函数被创建的作用域中对象的集合，这个集合被称为函数的作用域链，它决定了哪些数据能被函数访问。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> result = <span class="string">"abc"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>当函数deal创建时，该函数创建了[[Scope]]属性，并且创建了一个作用域链，作用域链中只包含一个全局对象(Global Object);<br><img src="/blog/images/js/scope/chain1.png" alt=""><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deal(<span class="number">1</span>,<span class="number">2</span>)</div></pre></td></tr></table></figure></p>
 <p>当执行到这个函数时，会创建一个<code>Execute context（执行上下文）</code>，执行上下文中就包含了函数运行期所需要的所有信息，它也有自己的作用域链。当函数执行时<code>js</code>引擎会先用<code>deal</code>函数的作用域链来初始化<code>Execute context</code>的作用域链，并且创建一个<code>Active Object</code>，这个对象里面包含了函数运行期的所有局部变量，参数以及this等变量，并将它推入到作用域链的顶部。<br><img src="/blog/images/js/scope/chain2.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function deal(a,b)&#123;</div><div class="line">    var result = &quot;abc&quot;;</div><div class="line">    function innerFn(c)&#123;</div><div class="line">        var temp = &quot;ddd&quot;;</div><div class="line">    &#125;</div><div class="line">    innerFn(3);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面这个代码，在函数<code>deal</code>里面定义了一个<code>innerFn</code>函数。创建的时候，对于<code>deal</code>函数一样。而对于<code>innerFn</code>函数，在创建的时候，它同样会创建[[Scope]]属性，并且创建了一个作用域链，和<code>deal</code>不同的是，<code>innerFn</code>函数在每次<code>deal</code>函数的执行的时候创建，因此它作用域链中包含一个全局对象(Global Object)和<code>deal</code>的<code>Active Object</code><br><img src="/blog/images/js/scope/chain3.png" alt=""><br>当代码执行到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">innerFn(3);</div></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deal</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> result = <span class="string">"abc"</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">innerFn</span>(<span class="params">c</span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> temp = <span class="string">"ddd"</span>;</div><div class="line">    &#125;</div><div class="line">    innerFn(<span class="number">3</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面这个代码，在函数<code>deal</code>里面定义了一个<code>innerFn</code>函数。创建的时候，对于<code>deal</code>函数一样。而对于<code>innerFn</code>函数，在创建的时候，它同样会创建[[Scope]]属性，并且创建了一个作用域链，和<code>deal</code>不同的是，<code>innerFn</code>函数在每次<code>deal</code>函数的执行的时候创建，因此它作用域链中包含一个全局对象(Global Object)和<code>deal</code>的<code>Active Object</code><br><img src="/blog/images/js/scope/chain3.png" alt=""><br>当代码执行到<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">innerFn(<span class="number">3</span>);</div></pre></td></tr></table></figure></p>
 <p>的时候，根据之前创建的<code>innerFn</code>函数的作用域链初始化一个<code>Execute context</code>的作用域链，并且创建一个<code>innerFn</code>的<code>Active Object</code><br><img src="/blog/images/js/scope/chain4.png" alt=""><br>从上面看到，当我们使用一个父作用域上的变量或方法时，比如上面的<code>innerFn</code>函数里面，<code>js</code>会沿着作用域链一直查找，直到找到该变量或方法。所以当作用域链比较长的时候，频繁的使用最上级的变量或方法会对程序的性能有一定的影响。</p>
 
             <blockquote>
@@ -211,12 +211,19 @@
             
 <nav class="post-nav">
   
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/09/14/js/var/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">javascript声明提升</h4>
+      </a>
+    </div>
+  
 
   
     <div class="waves-block waves-effect next fr">
       <a href="/2016/09/12/js/cookie/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">js操作cookie</h4>
+        <h4 class="title">javascript操作cookie</h4>
       </a>
     </div>
   
@@ -227,7 +234,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="js/scope" data-title="js变量作用域、作用域链" data-url="https://chihysoa.github.io/2016/09/13/js/scope/index.html"></div>
+	<div class="ds-thread" data-thread-key="js/scope" data-title="javascript变量作用域、作用域链" data-url="https://chihysoa.github.io/2016/09/13/js/scope/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -258,7 +265,7 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "js变量作用域、作用域链",
+    title: "javascript变量作用域、作用域链",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
     url: "https://chihysoa.github.io/2016/09/13/js/scope/index.html"
