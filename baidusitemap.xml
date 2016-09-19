@@ -4,6 +4,106 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/07/20/tool/git/git/</loc>
+    <lastmod>2016-09-19T05:03:53.779Z</lastmod>
+    <data>
+        <display>
+        <title>项目版本管理 - Git基本操作</title>
+        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
+        
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://chihysoa.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/19/tool/git/a/</loc>
+    <lastmod>2016-09-19T04:31:33.977Z</lastmod>
+    <data>
+        <display>
+        <title>Git:Unstaged changes after reset</title>
+        <pubTime>2016-09-19T03:52:52.000Z</pubTime>
+        
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://chihysoa.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/18/node/image/</loc>
+    <lastmod>2016-09-19T03:50:57.328Z</lastmod>
+    <data>
+        <display>
+        <title>nodejs图片尺寸压缩</title>
+        <pubTime>2016-09-18T14:24:23.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/17/linux/addfont/</loc>
+    <lastmod>2016-09-19T03:50:57.327Z</lastmod>
+    <data>
+        <display>
+        <title>linux添加字体</title>
+        <pubTime>2016-09-17T07:22:23.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/14/blog/init/</loc>
+    <lastmod>2016-09-19T03:50:57.326Z</lastmod>
+    <data>
+        <display>
+        <title>使用hexo搭建博客</title>
+        <pubTime>2016-09-14T05:46:52.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://chihysoa.github.io/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/09/14/blog/sitemap/</loc>
     <lastmod>2016-09-14T05:57:06.575Z</lastmod>
     <data>
@@ -317,26 +417,6 @@
            
              
               <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/07/20/tool/git/</loc>
-    <lastmod>2016-09-14T02:25:59.000Z</lastmod>
-    <data>
-        <display>
-        <title>项目版本管理 - git基本操作</title>
-        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
-        
-        <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="https://chihysoa.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>

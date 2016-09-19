@@ -3,59 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>前后端分离方案 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
+  <title>使用hexo搭建博客 | 沉淀 - chihysoa的网站 | 萍水相逢</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="theme-color" content="#3F51B5">
   
   
-  <meta name="keywords" content="前端">
-  <meta name="description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
-前后端分离的优点有很多，这里随便提几点：
-
-不分离的情况下前后端职责不清
-前后端各尽其职可以最大程度的减少开发难度，加快效率
-前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
-前后端代码解耦，一个后端代码可以提供给多个前端使用
-
-那么说说现阶段我所接触过，使用过">
+  <meta name="keywords" content="hexo">
+  <meta name="description" content="现在开源的博客系统有很多，比如使用PHP+MYSQL的WordPress，用java的DLOG4J，使用asp.net的devtext。看了这么多最后用了基于nodejs的hexo。顺便介绍一下使用hexo怎么从0开始搭建自己的博客。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前后端分离方案">
-<meta property="og:url" content="https://chihysoa.github.io/2016/07/21/fe/fe/index.html">
+<meta property="og:title" content="使用hexo搭建博客">
+<meta property="og:url" content="https://chihysoa.github.io/2016/09/14/blog/init/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
-前后端分离的优点有很多，这里随便提几点：
-
-不分离的情况下前后端职责不清
-前后端各尽其职可以最大程度的减少开发难度，加快效率
-前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
-前后端代码解耦，一个后端代码可以提供给多个前端使用
-
-那么说说现阶段我所接触过，使用过">
-<meta property="og:updated_time" content="2016-09-14T04:30:18.952Z">
+<meta property="og:description" content="现在开源的博客系统有很多，比如使用PHP+MYSQL的WordPress，用java的DLOG4J，使用asp.net的devtext。看了这么多最后用了基于nodejs的hexo。顺便介绍一下使用hexo怎么从0开始搭建自己的博客。">
+<meta property="og:image" content="https://chihysoa.github.io/blog/images/blog/init/hexo.png">
+<meta property="og:updated_time" content="2016-09-19T03:50:57.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前后端分离方案">
-<meta name="twitter:description" content="前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。
-前后端分离的优点有很多，这里随便提几点：
-
-不分离的情况下前后端职责不清
-前后端各尽其职可以最大程度的减少开发难度，加快效率
-前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等
-前后端代码解耦，一个后端代码可以提供给多个前端使用
-
-那么说说现阶段我所接触过，使用过">
+<meta name="twitter:title" content="使用hexo搭建博客">
+<meta name="twitter:description" content="现在开源的博客系统有很多，比如使用PHP+MYSQL的WordPress，用java的DLOG4J，使用asp.net的devtext。看了这么多最后用了基于nodejs的hexo。顺便介绍一下使用hexo怎么从0开始搭建自己的博客。">
+<meta name="twitter:image" content="https://chihysoa.github.io/blog/images/blog/init/hexo.png">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。&lt;/p&gt;
-&lt;p&gt;前后端分离的优点有很多，这里随便提几点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;不分离的情况下前后端职责不清&lt;/li&gt;
-&lt;li&gt;前后端各尽其职可以最大程度的减少开发难度，加快效率&lt;/li&gt;
-&lt;li&gt;前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等&lt;/li&gt;
-&lt;li&gt;前后端代码解耦，一个后端代码可以提供给多个前端使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;那么说说现阶段我所接触过，使用过的前后端分离方案。&lt;br&gt;">
+  <meta name="summary" content="&lt;p&gt;现在开源的博客系统有很多，比如使用&lt;code&gt;PHP+MYSQL&lt;/code&gt;的&lt;code&gt;WordPress&lt;/code&gt;，用&lt;code&gt;java&lt;/code&gt;的&lt;code&gt;DLOG4J&lt;/code&gt;，使用&lt;code&gt;asp.net&lt;/code&gt;的&lt;code&gt;devtext&lt;/code&gt;。看了这么多最后用了基于&lt;code&gt;nodejs&lt;/code&gt;的&lt;code&gt;hexo&lt;/code&gt;。顺便介绍一下使用&lt;code&gt;hexo&lt;/code&gt;怎么从0开始搭建自己的博客。&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -119,7 +89,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">前后端分离方案</div>
+        <div class="flex-col header-title ellipsis">使用hexo搭建博客</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -140,15 +110,15 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">前后端分离方案</h1>
+    <h1 class="author">使用hexo搭建博客</h1>
     <h5 class="subtitle">
         
-            <time datetime="2016-07-21T07:24:52.000Z" itemprop="datePublished" class="page-time">
-  2016-07-21
+            <time datetime="2016-09-14T05:46:52.000Z" itemprop="datePublished" class="page-time">
+  2016-09-14
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端/">前端</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/hexo/">hexo</a></li></ul>
 
         
     </h5>
@@ -156,11 +126,11 @@
 </header>
 
     <div class="container body-wrap">
-      <article id="post-fe/fe" 
+      <article id="post-blog/init" 
   class="article article-type-post" itemprop="blogPost">
     <div class="post-meat flex-row">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
     </div>
     <div class="post-body">
@@ -207,7 +177,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#简介"><span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装"><span class="post-toc-text">安装</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#初始化"><span class="post-toc-text">初始化</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#项目结构"><span class="post-toc-text">项目结构</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第一个页面"><span class="post-toc-text">第一个页面</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#更换主题"><span class="post-toc-text">更换主题</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#编译-部署"><span class="post-toc-text">编译/部署</span></a></li></ol>
             </nav>
             
         </aside>
@@ -215,27 +185,17 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>前端各类技术在高速的发展，前端已经真正蜕变成了一个工程师，传统的开发方式，传统的前后端协作方式已经不可容忍，前后端分离势在必行。</p>
-<p>前后端分离的优点有很多，这里随便提几点：</p>
-<ul>
-<li>不分离的情况下前后端职责不清</li>
-<li>前后端各尽其职可以最大程度的减少开发难度，加快效率</li>
-<li>前端可以尽可能的发挥自己能力，不再有局限性，如性能优化等</li>
-<li>前后端代码解耦，一个后端代码可以提供给多个前端使用</li>
-</ul>
-<p>那么说说现阶段我所接触过，使用过的前后端分离方案。<br><a id="more"></a><br>现阶段我所熟知的前后端分离方案有三种</p>
-<ul>
-<li>spa单页应用</li>
-<li>基于nodejs前后端分离方案<!-- * 基于传统模式(jsp/velocity)的前后端分离方案 -->
-</li>
-</ul>
-<p>下面说说各种方案的实现方式，这里后端以java为例</p>
-<p><a href="/blog/2016/07/21/fe/fe-spa/">spa单页应用方案</a><br><a href="/blog/2016/08/03/fe/fe-node/">基于nodejs前后端分离方案</a><br><!-- [基于传统模式(jsp/velocity)的前后端分离方案](/2016/07/21/fe-jsp/) --></p>
-
+            <p>现在开源的博客系统有很多，比如使用<code>PHP+MYSQL</code>的<code>WordPress</code>，用<code>java</code>的<code>DLOG4J</code>，使用<code>asp.net</code>的<code>devtext</code>。看了这么多最后用了基于<code>nodejs</code>的<code>hexo</code>。顺便介绍一下使用<code>hexo</code>怎么从0开始搭建自己的博客。<br><a id="more"></a></p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><code>hexo</code>是一款快速、简洁且高效的博客框架，具有<code>构建速度快</code>，<code>支持Markdown</code>，<code>部署简单</code>，<code>插件丰富</code>的特点。<br><a href="https://hexo.io" target="_blank" rel="external">https://hexo.io</a>是它的官网。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>既然是基于<code>nodejs</code>的，那么<code>nodejs</code>肯定是必须的，没安装的可以自行去<a href="https://nodejs.org" target="_blank" rel="external">nodejs的官网</a>下载<br>安装好<code>nodejs</code>以后，打开命令行，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p><code>linux</code>下可能需要<code>sudo</code>权限，安装好以后，在命令行输入<code>hexo</code>会输入<br><img src="/blog/images/blog/init/hexo.png" alt=""></p>
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><p>在命令行输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init myblog</div></pre></td></tr></table></figure></p>
+<p><code>hexo</code>就会自动在当然目录下初始化一个<code>myblog</code>目录作为我们的博客代码存放目录，并且会初始化一些必要的文件。<br>//图片</p>
+<h1 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h1><h1 id="第一个页面"><a href="#第一个页面" class="headerlink" title="第一个页面"></a>第一个页面</h1><h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><h1 id="编译-部署"><a href="#编译-部署" class="headerlink" title="编译/部署"></a>编译/部署</h1>
             <blockquote>
                 <p>
                 本文地址：
-                <a href="https://chihysoa.github.io/2016/07/21/fe/fe/" target="_blank" rel="external">https://chihysoa.github.io/2016/07/21/fe/fe/</a>
+                <a href="https://chihysoa.github.io/2016/09/14/blog/init/" target="_blank" rel="external">https://chihysoa.github.io/2016/09/14/blog/init/</a>
                 </p>
                 <footer><cite><a href="https://chihysoa.github.io">@沉淀 - chihysoa的网站</a></cite></footer>
             </blockquote>
@@ -244,18 +204,18 @@
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/2016/07/21/fe/fe-spa/" id="post-prev" class="post-nav-link">
+      <a href="/2016/09/14/blog/sitemap/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">前后端分离方案 - spa</h4>
+        <h4 class="title">hexo生成sitemap站点地图</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/07/20/tool/git/git/" id="post-next" class="post-nav-link">
+      <a href="/2016/09/14/js/var/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">项目版本管理 - Git基本操作</h4>
+        <h4 class="title">javascript声明提升</h4>
       </a>
     </div>
   
@@ -266,7 +226,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="fe/fe" data-title="前后端分离方案" data-url="https://chihysoa.github.io/2016/07/21/fe/fe/index.html"></div>
+	<div class="ds-thread" data-thread-key="blog/init" data-title="使用hexo搭建博客" data-url="https://chihysoa.github.io/2016/09/14/blog/init/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -297,10 +257,10 @@
 
 <script>
 var BLOG_SHARE = {
-    title: "前后端分离方案",
+    title: "使用hexo搭建博客",
     pic: "/img/logo.jpg",
     summary: document.getElementsByName('summary')[0].content,
-    url: "https://chihysoa.github.io/2016/07/21/fe/fe/index.html"
+    url: "https://chihysoa.github.io/2016/09/14/blog/init/index.html"
 };
 </script>
 <div class="global-share" id="global-share">
