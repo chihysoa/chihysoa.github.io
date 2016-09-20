@@ -1,0 +1,634 @@
+{
+    "res": {
+        "src/index.less": {
+            "uri": "/src/index.css",
+            "type": "css"
+        },
+        "src/mod.js": {
+            "uri": "/src/mod.js",
+            "type": "js"
+        },
+        "src/index.js": {
+            "uri": "/src/index.js",
+            "type": "js",
+            "deps": [
+                "src/lib/jquery-2.2.3.min.js"
+            ]
+        },
+        "src/index.html": {
+            "uri": "/index.html",
+            "type": "html",
+            "deps": [
+                "src/lib/jquery-2.2.3.min.js"
+            ]
+        },
+        "src/lib/bgimg/1.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/1.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/10.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/10.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/100.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/100.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/101.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/101.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/102.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/102.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/103.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/103.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/104.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/104.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/105.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/105.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/106.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/106.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/107.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/107.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/108.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/108.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/109.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/109.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/11.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/11.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/110.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/110.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/111.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/111.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/112.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/112.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/113.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/113.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/114.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/114.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/115.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/115.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/116.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/116.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/117.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/117.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/118.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/118.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/119.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/119.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/12.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/12.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/120.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/120.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/121.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/121.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/122.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/122.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/123.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/123.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/124.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/124.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/125.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/125.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/126.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/126.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/127.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/127.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/128.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/128.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/129.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/129.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/13.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/13.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/130.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/130.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/131.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/131.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/132.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/132.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/133.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/133.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/134.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/134.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/135.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/135.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/136.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/136.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/137.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/137.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/138.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/138.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/139.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/139.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/14.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/14.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/140.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/140.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/141.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/141.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/142.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/142.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/143.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/143.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/144.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/144.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/145.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/145.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/146.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/146.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/147.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/147.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/148.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/148.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/149.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/149.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/15.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/15.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/16.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/16.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/17.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/17.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/18.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/18.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/19.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/19.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/2.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/2.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/20.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/20.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/21.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/21.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/22.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/22.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/23.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/23.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/24.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/24.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/25.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/25.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/26.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/26.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/27.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/27.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/28.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/28.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/29.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/29.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/3.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/3.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/30.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/30.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/31.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/31.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/32.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/32.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/33.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/33.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/34.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/34.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/35.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/35.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/36.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/36.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/37.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/37.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/38.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/38.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/39.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/39.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/4.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/4.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/40.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/40.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/41.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/41.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/42.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/42.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/43.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/43.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/44.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/44.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/45.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/45.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/46.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/46.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/47.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/47.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/48.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/48.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/49.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/49.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/5.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/5.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/50.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/50.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/51.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/51.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/52.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/52.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/53.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/53.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/54.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/54.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/55.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/55.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/56.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/56.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/57.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/57.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/58.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/58.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/59.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/59.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/6.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/6.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/60.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/60.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/61.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/61.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/62.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/62.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/63.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/63.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/64.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/64.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/65.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/65.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/66.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/66.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/67.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/67.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/68.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/68.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/69.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/69.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/7.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/7.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/70.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/70.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/71.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/71.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/72.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/72.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/73.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/73.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/74.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/74.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/75.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/75.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/76.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/76.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/77.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/77.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/78.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/78.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/79.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/79.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/8.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/8.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/80.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/80.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/81.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/81.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/82.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/82.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/83.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/83.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/84.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/84.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/85.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/85.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/86.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/86.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/87.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/87.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/88.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/88.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/89.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/89.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/9.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/9.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/90.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/90.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/91.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/91.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/92.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/92.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/93.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/93.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/94.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/94.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/95.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/95.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/96.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/96.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/97.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/97.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/98.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/98.jpg",
+            "type": "jpg"
+        },
+        "src/lib/bgimg/99.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/bgimg/99.jpg",
+            "type": "jpg"
+        },
+        "src/lib/img/logo.jpg": {
+            "uri": "http://cdn.chihy.cc/home/lib/img/logo.jpg",
+            "type": "jpg"
+        },
+        "src/lib/jquery-2.2.3.min.js": {
+            "uri": "http://cdn.chihy.cc/home/lib/jquery-2.2.3.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "src/lib/jquery-2.2.3.min"
+            }
+        }
+    },
+    "pkg": {}
+}
