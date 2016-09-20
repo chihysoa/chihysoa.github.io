@@ -93,7 +93,8 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+            <a style="display:none
+            ;" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
         </div>
@@ -147,8 +148,7 @@
     
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-        <h2 id="什么是NodeJs"><a href="#什么是NodeJs" class="headerlink" title="什么是NodeJs"></a>什么是NodeJs</h2><p>Nodejs也是这几年非常火爆的技术，它的社区非常活跃，而且采用的是chrome v8引擎，也就是说它用的是js语言，就是我们前端所用的js语言，所以由我们前端来写再合适不过了。</p>
-<h2 id="NodeJs的角色"><a href="#NodeJs的角色" class="headerlink" title="NodeJs的角色"></a>NodeJs的角色</h2><p>这里提一下传统的开发模式，在传统的开发模式下数据服务提供者和模板渲染都是后端服务器，<code>Nodejs</code>承担的角色就是把数据服务和模板渲染给分开，数据服务还是由后端提供，但是模板渲染则交给<code>Nodejs</code>去处理。<br>和<code>spa</code>也有一定的区别，首先由于是服务器渲染，这种方式可以完美的支持<code>SEO</code>，但是在用户体检方面<code>spa</code>占优。其次虽然<code>NodeJs</code>是使用的是js语言，但是用<code>NodeJs</code>作为服务器对开发者的要求会比spa的要求要高，需要开发者具备一定的服务器端的专业知识而且对于<code>NodeJs</code>服务器的稳定性，健壮性，性能方面都会有一定的要求。<br>
+        <h2 id="NodeJs的角色"><a href="#NodeJs的角色" class="headerlink" title="NodeJs的角色"></a>NodeJs的角色</h2><p>这里提一下传统的开发模式，在传统的开发模式下数据服务提供者和模板渲染都是后端服务器，<code>Nodejs</code>承担的角色就是把数据服务和模板渲染给分开，数据服务还是由后端提供，但是模板渲染则交给<code>Nodejs</code>去处理。<br>和<code>spa</code>也有一定的区别，首先由于是服务器渲染，这种方式可以完美的支持<code>SEO</code>，但是在用户体检方面<code>spa</code>占优。其次虽然<code>NodeJs</code>是使用的是js语言，但是用<code>NodeJs</code>作为服务器对开发者的要求会比spa的要求要高，需要开发者具备一定的服务器端的专业知识而且对于<code>NodeJs</code>服务器的稳定性，健壮性，性能方面都会有一定的要求。<br>
     
     </div>
     
@@ -411,5 +411,43 @@ var BLOG_SHARE = {
 
 
 </body>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
 
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+  //站内搜索
+// (function(){
+//     var bp = document.createElement('script');
+//     var curProtocol = window.location.protocol.split(':')[0];
+//     if (curProtocol === 'https') {
+//         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+//     }
+//     else {
+//         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+//     }
+//     var s = document.getElementsByTagName("script")[0];
+//     s.parentNode.insertBefore(bp, s);
+// })();
+</script>
 </html>

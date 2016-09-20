@@ -93,7 +93,8 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+            <a style="display:none
+            ;" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
         </div>
@@ -194,43 +195,6 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-js/es6_4" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/06/js/es6_4/">es6入门--模块化</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-09-06T14:27:32.000Z" itemprop="datePublished" class="post-time">
-  2016-09-06
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
-
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <h1 id="模块-export-import"><a href="#模块-export-import" class="headerlink" title="模块(export/import)"></a>模块(export/import)</h1><p>模块化一直是<code>js</code>的短板，在<code>es6</code>之前，模块化开发也是百花齐放百家争鸣，各种模块化实现方式如<code>requirejs</code>，<code>seajs</code>等等。在es6中，终于出来了<code>js</code>原生的模块化支持，不可谓前端的一大幸事啊。<br>es6的模块化主要包括<code>导出(export)</code>和<code>导入(import)</code><br>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
         <article id="post-js/es6_5" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -259,6 +223,43 @@
     <div class="post-content" id="post-content" itemprop="postContent" >
     
         <p><code>js</code>中，<code>function</code>的概念既是方法也是类，所以在<code>es6</code>之前创建一个类就是通过定义<code>function</code>来实现，然后通过<code>new</code>这个<code>function</code>来创建实例。<br>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-js/es6_4" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/09/06/js/es6_4/">es6入门--模块化</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-09-06T14:27:32.000Z" itemprop="datePublished" class="post-time">
+  2016-09-06
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/javascript/">javascript</a></li></ul>
+
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <h1 id="模块-export-import"><a href="#模块-export-import" class="headerlink" title="模块(export/import)"></a>模块(export/import)</h1><p>模块化一直是<code>js</code>的短板，在<code>es6</code>之前，模块化开发也是百花齐放百家争鸣，各种模块化实现方式如<code>requirejs</code>，<code>seajs</code>等等。在es6中，终于出来了<code>js</code>原生的模块化支持，不可谓前端的一大幸事啊。<br>es6的模块化主要包括<code>导出(export)</code>和<code>导入(import)</code><br>
     
     </div>
     
@@ -583,5 +584,43 @@ var BLOG_SHARE = {
 
 
 </body>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
 
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+  //站内搜索
+// (function(){
+//     var bp = document.createElement('script');
+//     var curProtocol = window.location.protocol.split(':')[0];
+//     if (curProtocol === 'https') {
+//         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+//     }
+//     else {
+//         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+//     }
+//     var s = document.getElementsByTagName("script")[0];
+//     s.parentNode.insertBefore(bp, s);
+// })();
+</script>
 </html>

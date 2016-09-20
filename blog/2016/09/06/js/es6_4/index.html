@@ -94,7 +94,8 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+            <a style="display:none
+            ;" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
         </div>
@@ -211,18 +212,18 @@
 <nav class="post-nav">
   
     <div class="waves-block waves-effect prev fl">
-      <a href="/2016/09/10/node/linux-install/" id="post-prev" class="post-nav-link">
+      <a href="/2016/09/06/js/es6_5/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">linux下安装nodejs</h4>
+        <h4 class="title">es6入门--class</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next fr">
-      <a href="/2016/09/06/js/es6_5/" id="post-next" class="post-nav-link">
+      <a href="/2016/09/06/js/es6_3/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">es6入门--class</h4>
+        <h4 class="title">es6入门--集合</h4>
       </a>
     </div>
   
@@ -342,5 +343,43 @@ var BLOG_SHARE = {
 
 
 </body>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
 
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+  //站内搜索
+// (function(){
+//     var bp = document.createElement('script');
+//     var curProtocol = window.location.protocol.split(':')[0];
+//     if (curProtocol === 'https') {
+//         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+//     }
+//     else {
+//         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+//     }
+//     var s = document.getElementsByTagName("script")[0];
+//     s.parentNode.insertBefore(bp, s);
+// })();
+</script>
 </html>

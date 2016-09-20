@@ -93,7 +93,8 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+            <a style="display:none
+            ;" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
         </div>
@@ -147,7 +148,7 @@
     
     <div class="post-content" id="post-content" itemprop="postContent" >
     
-        <p>现在99.9%的编码都是基于<code>http/https</code>协议的，直接使用<code>TPC/IP</code>的编码几乎没有，最近某个朋友问我关于<code>java</code>使用<code>TCP</code>是如何通信的，一时兴起复习了下<code>java</code>的<code>socket</code>顺带研究了下<code>node</code>的<code>socket</code>。<br>
+        <p>现在99.9%的编码都是基于<code>http/https</code>协议的<code>web</code>项目，直接使用<code>TPC/IP</code>的编码几乎没有了，最近某个朋友问我关于<code>java</code>使用<code>TCP</code>是如何通信的，一时兴起复习了下<code>java</code>的<code>socket</code>顺带研究了下<code>node</code>的<code>socket</code>。<br>
     
     </div>
     
@@ -307,43 +308,6 @@
     </li>
   
     <li class="post-list-item">
-        <article id="post-blog/sitemap" 
-  class="article article-type-post" itemprop="blogPost">
-     
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2016/09/14/blog/sitemap/">hexo生成sitemap站点地图</a>
-    </h3>
-  
-
-
-
-    <div class="post-meta">
-        <time datetime="2016-09-14T05:46:52.000Z" itemprop="datePublished" class="post-time">
-  2016-09-14
-</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/hexo/">hexo</a></li></ul>
-
-
- 
-    </div>
-    
-    <div class="post-content" id="post-content" itemprop="postContent" >
-    
-        <p>为了方便百度或者其他搜索引擎收录我们的网站，我们需要给网站生成<code>sitemap</code>。网上找了一圈发现有几个好用的包，马上用起来。<br>
-    
-    </div>
-    
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-</article>
-    </li>
-  
-    <li class="post-list-item">
         <article id="post-blog/init" 
   class="article article-type-post" itemprop="blogPost">
      
@@ -372,6 +336,43 @@
     <div class="post-content" id="post-content" itemprop="postContent" >
     
         <p>现在开源的博客系统有很多，比如使用<code>PHP+MYSQL</code>的<code>WordPress</code>，用<code>java</code>的<code>DLOG4J</code>，使用<code>asp.net</code>的<code>devtext</code>。看了这么多最后用了基于<code>nodejs</code>的<code>hexo</code>。顺便介绍一下使用<code>hexo</code>怎么从0开始搭建自己的博客。<br>
+    
+    </div>
+    
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-blog/sitemap" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2016/09/14/blog/sitemap/">hexo生成sitemap站点地图</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2016-09-14T05:46:52.000Z" itemprop="datePublished" class="post-time">
+  2016-09-14
+</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/hexo/">hexo</a></li></ul>
+
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <p>为了方便百度或者其他搜索引擎收录我们的网站，我们需要给网站生成<code>sitemap</code>。网上找了一圈发现有几个好用的包，马上用起来。<br>
     
     </div>
     
@@ -584,5 +585,43 @@ var BLOG_SHARE = {
 
 
 </body>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
 
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+  //站内搜索
+// (function(){
+//     var bp = document.createElement('script');
+//     var curProtocol = window.location.protocol.split(':')[0];
+//     if (curProtocol === 'https') {
+//         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+//     }
+//     else {
+//         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+//     }
+//     var s = document.getElementsByTagName("script")[0];
+//     s.parentNode.insertBefore(bp, s);
+// })();
+</script>
 </html>

@@ -10,23 +10,23 @@
   
   
   <meta name="keywords" content="node">
-  <meta name="description" content="现在99.9%的编码都是基于http/https协议的，直接使用TPC/IP的编码几乎没有，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
+  <meta name="description" content="现在99.9%的编码都是基于http/https协议的web项目，直接使用TPC/IP的编码几乎没有了，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nodejs的TCP/IP通信(Socket)">
 <meta property="og:url" content="https://chihysoa.github.io/2016/09/20/node/socket/index.html">
 <meta property="og:site_name" content="沉淀 - chihysoa的网站">
-<meta property="og:description" content="现在99.9%的编码都是基于http/https协议的，直接使用TPC/IP的编码几乎没有，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
+<meta property="og:description" content="现在99.9%的编码都是基于http/https协议的web项目，直接使用TPC/IP的编码几乎没有了，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/node/socket/1.png">
 <meta property="og:image" content="https://chihysoa.github.io/blog/images/node/socket/2.png">
-<meta property="og:updated_time" content="2016-09-20T03:08:17.190Z">
+<meta property="og:updated_time" content="2016-09-20T05:27:39.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nodejs的TCP/IP通信(Socket)">
-<meta name="twitter:description" content="现在99.9%的编码都是基于http/https协议的，直接使用TPC/IP的编码几乎没有，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
+<meta name="twitter:description" content="现在99.9%的编码都是基于http/https协议的web项目，直接使用TPC/IP的编码几乎没有了，最近某个朋友问我关于java使用TCP是如何通信的，一时兴起复习了下java的socket顺带研究了下node的socket。">
 <meta name="twitter:image" content="https://chihysoa.github.io/blog/images/node/socket/1.png">
   
     <link rel="alternative" href="/atom.xml" title="沉淀 - chihysoa的网站" type="application/atom+xml">
   
-  <meta name="summary" content="&lt;p&gt;现在99.9%的编码都是基于&lt;code&gt;http/https&lt;/code&gt;协议的，直接使用&lt;code&gt;TPC/IP&lt;/code&gt;的编码几乎没有，最近某个朋友问我关于&lt;code&gt;java&lt;/code&gt;使用&lt;code&gt;TCP&lt;/code&gt;是如何通信的，一时兴起复习了下&lt;code&gt;java&lt;/code&gt;的&lt;code&gt;socket&lt;/code&gt;顺带研究了下&lt;code&gt;node&lt;/code&gt;的&lt;code&gt;socket&lt;/code&gt;。&lt;br&gt;">
+  <meta name="summary" content="&lt;p&gt;现在99.9%的编码都是基于&lt;code&gt;http/https&lt;/code&gt;协议的&lt;code&gt;web&lt;/code&gt;项目，直接使用&lt;code&gt;TPC/IP&lt;/code&gt;的编码几乎没有了，最近某个朋友问我关于&lt;code&gt;java&lt;/code&gt;使用&lt;code&gt;TCP&lt;/code&gt;是如何通信的，一时兴起复习了下&lt;code&gt;java&lt;/code&gt;的&lt;code&gt;socket&lt;/code&gt;顺带研究了下&lt;code&gt;node&lt;/code&gt;的&lt;code&gt;socket&lt;/code&gt;。&lt;br&gt;">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -97,7 +97,8 @@
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
             <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+            <a style="display:none
+            ;" href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
         </div>
@@ -186,7 +187,7 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <p>现在99.9%的编码都是基于<code>http/https</code>协议的，直接使用<code>TPC/IP</code>的编码几乎没有，最近某个朋友问我关于<code>java</code>使用<code>TCP</code>是如何通信的，一时兴起复习了下<code>java</code>的<code>socket</code>顺带研究了下<code>node</code>的<code>socket</code>。<br><a id="more"></a><br><code>node</code>下的<code>socket</code>主要用到了<code>net</code>这个模块，通过这个模块来创建服务端和客户端。</p>
+            <p>现在99.9%的编码都是基于<code>http/https</code>协议的<code>web</code>项目，直接使用<code>TPC/IP</code>的编码几乎没有了，最近某个朋友问我关于<code>java</code>使用<code>TCP</code>是如何通信的，一时兴起复习了下<code>java</code>的<code>socket</code>顺带研究了下<code>node</code>的<code>socket</code>。<br><a id="more"></a><br><code>node</code>下的<code>socket</code>主要用到了<code>net</code>这个模块，通过这个模块来创建服务端和客户端。</p>
 <h1 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h1><p>首先引入<code>net</code>模块，再通过<code>net</code>来创建一个服务器并监听一个端口<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> net = <span class="built_in">require</span>(<span class="string">'net'</span>),</div><div class="line">    HOST = <span class="string">'127.0.0.1'</span>,</div><div class="line">    PORT = <span class="number">6969</span>,</div><div class="line">    server = net.createServer();</div><div class="line"></div><div class="line">server.listen(PORT, HOST);</div></pre></td></tr></table></figure></p>
 <p>在让<code>server</code>监听<code>connection</code>事件，传入一个回调函数，在这个回调函数中我们可以获取到一个<code>socket</code>对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">server.on(<span class="string">'connection'</span>, (sock)=&gt; &#123;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <p>再通过这个<code>socket</code>对象<code>data</code>事件来获取客户端发送过来的数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sock.on(<span class="string">'data'</span>,(data)=&gt;&#123;</div><div class="line">    <span class="built_in">console</span>.log(data);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
@@ -334,5 +335,43 @@ var BLOG_SHARE = {
 
 
 </body>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var key = 'ab004a172b44602447d13ffe29f6798b';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      key = 'b3ce8f578f92f7d8c8c4cfee2829e0da';
+    }
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?"+key;
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
 
+  ;(function(){
+    var id = '1260132981',webid = '1260132981';
+    if(location.href.indexOf('chihysoa.github')!==-1){
+      id = '1260133003';
+      webid = '1260133003';
+    }
+    var src = '//s11.cnzz.com/z_stat.php?id='+id+'&web_id='+webid;
+    var script = document.createElement('script');
+    script.src = src;
+    script.language ='JavaScript';
+    document.querySelector('body').appendChild(script);
+  })();
+  //站内搜索
+// (function(){
+//     var bp = document.createElement('script');
+//     var curProtocol = window.location.protocol.split(':')[0];
+//     if (curProtocol === 'https') {
+//         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+//     }
+//     else {
+//         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+//     }
+//     var s = document.getElementsByTagName("script")[0];
+//     s.parentNode.insertBefore(bp, s);
+// })();
+</script>
 </html>
