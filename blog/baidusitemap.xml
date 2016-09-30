@@ -4,14 +4,58 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/09/26/js/closure/</loc>
+    <lastmod>2016-09-30T05:56:05.781Z</lastmod>
+    <data>
+        <display>
+        <title>javascript闭包（Closure）</title>
+        <pubTime>2016-09-26T05:49:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/08/24/js/extends/</loc>
+    <lastmod>2016-09-26T05:45:31.976Z</lastmod>
+    <data>
+        <display>
+        <title>javascript继承</title>
+        <pubTime>2016-08-24T05:28:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/09/20/node/socket/</loc>
-    <lastmod>2016-09-20T05:27:39.670Z</lastmod>
+    <lastmod>2016-09-23T09:37:03.404Z</lastmod>
     <data>
         <display>
         <title>nodejs的TCP/IP通信(Socket)</title>
         <pubTime>2016-09-20T03:08:23.000Z</pubTime>
         
         <tag>node</tag>
+         
+        <tag>网络</tag>
          
          
            
@@ -24,14 +68,84 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/08/03/fe/fe-node/</loc>
-    <lastmod>2016-09-20T05:20:07.472Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/10/node/linux-install/</loc>
+    <lastmod>2016-09-23T09:36:51.454Z</lastmod>
     <data>
         <display>
-        <title>前后端分离方案 - NodeJs</title>
-        <pubTime>2016-08-03T14:28:38.000Z</pubTime>
+        <title>linux下安装nodejs</title>
+        <pubTime>2016-09-10T06:24:23.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/18/node/image/</loc>
+    <lastmod>2016-09-23T09:36:40.663Z</lastmod>
+    <data>
+        <display>
+        <title>nodejs图片尺寸压缩</title>
+        <pubTime>2016-09-18T14:24:23.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>javascript</tag>
+         
+        <tag>image</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/08/13/node/cli/</loc>
+    <lastmod>2016-09-23T09:36:21.883Z</lastmod>
+    <data>
+        <display>
+        <title>基于nodejs开发自己的cli</title>
+        <pubTime>2016-08-13T15:24:23.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/07/21/fe/fe-spa/</loc>
+    <lastmod>2016-09-23T09:36:11.059Z</lastmod>
+    <data>
+        <display>
+        <title>前后端分离方案 - spa</title>
+        <pubTime>2016-07-21T14:28:38.000Z</pubTime>
         
         <tag>前端</tag>
+         
+        <tag>spa</tag>
          
          
            
@@ -44,13 +158,81 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/19/tool/redis/window/</loc>
-    <lastmod>2016-09-19T09:53:55.148Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/08/03/fe/fe-node/</loc>
+    <lastmod>2016-09-23T09:36:05.213Z</lastmod>
+    <data>
+        <display>
+        <title>前后端分离方案 - NodeJs</title>
+        <pubTime>2016-08-03T14:28:38.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://chihysoa.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/17/linux/addfont/</loc>
+    <lastmod>2016-09-23T09:35:51.396Z</lastmod>
+    <data>
+        <display>
+        <title>linux添加字体</title>
+        <pubTime>2016-09-17T07:22:23.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/10/linux/path/</loc>
+    <lastmod>2016-09-23T09:35:46.600Z</lastmod>
+    <data>
+        <display>
+        <title>linux设置环境变量</title>
+        <pubTime>2016-09-10T07:22:23.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>系统</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/19/redis/window/</loc>
+    <lastmod>2016-09-23T09:35:37.550Z</lastmod>
     <data>
         <display>
         <title>window下安装redis</title>
         <pubTime>2016-09-19T07:54:52.000Z</pubTime>
         
+        <tag>工具</tag>
+         
         <tag>redis</tag>
          
          
@@ -64,19 +246,21 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/19/tool/git/Unstaged/</loc>
-    <lastmod>2016-09-19T07:52:40.992Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_5/</loc>
+    <lastmod>2016-09-23T09:35:03.333Z</lastmod>
     <data>
         <display>
-        <title>Git:Unstaged changes after reset</title>
-        <pubTime>2016-09-19T03:52:52.000Z</pubTime>
+        <title>es6入门--class</title>
+        <pubTime>2016-09-06T14:27:32.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
              
-              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
           
         </display>
     </data>
@@ -84,19 +268,21 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/07/20/tool/git/git/</loc>
-    <lastmod>2016-09-19T07:52:37.906Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_4/</loc>
+    <lastmod>2016-09-23T09:34:58.866Z</lastmod>
     <data>
         <display>
-        <title>项目版本管理 - Git基本操作</title>
-        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
+        <title>es6入门--模块化</title>
+        <pubTime>2016-09-06T14:27:32.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
              
-              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
           
         </display>
     </data>
@@ -104,19 +290,21 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/18/node/image/</loc>
-    <lastmod>2016-09-19T03:50:57.328Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_3/</loc>
+    <lastmod>2016-09-23T09:34:54.193Z</lastmod>
     <data>
         <display>
-        <title>nodejs图片尺寸压缩</title>
-        <pubTime>2016-09-18T14:24:23.000Z</pubTime>
+        <title>es6入门--集合</title>
+        <pubTime>2016-09-06T12:27:24.000Z</pubTime>
         
-        <tag>node</tag>
+        <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
              
-              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
           
         </display>
     </data>
@@ -124,19 +312,65 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/17/linux/addfont/</loc>
-    <lastmod>2016-09-19T03:50:57.327Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/05/js/es6_2/</loc>
+    <lastmod>2016-09-23T09:34:43.988Z</lastmod>
     <data>
         <display>
-        <title>linux添加字体</title>
-        <pubTime>2016-09-17T07:22:23.000Z</pubTime>
+        <title>es6入门--基本扩展(二)</title>
+        <pubTime>2016-09-05T06:59:22.000Z</pubTime>
         
-        <tag>linux</tag>
+        <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
              
-              <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/05/js/es6_1/</loc>
+    <lastmod>2016-09-23T09:34:31.468Z</lastmod>
+    <data>
+        <display>
+        <title>es6入门--基本扩展(一)</title>
+        <pubTime>2016-09-05T06:27:32.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>es6</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/12/js/cookie/</loc>
+    <lastmod>2016-09-23T09:34:23.132Z</lastmod>
+    <data>
+        <display>
+        <title>javascript操作cookie</title>
+        <pubTime>2016-09-12T11:03:32.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>cookie</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
           
         </display>
     </data>
@@ -145,13 +379,17 @@
     
   <url>
     <loc>https://chihysoa.github.io/2016/09/14/blog/init/</loc>
-    <lastmod>2016-09-19T03:50:57.326Z</lastmod>
+    <lastmod>2016-09-23T09:34:10.835Z</lastmod>
     <data>
         <display>
         <title>使用hexo搭建博客</title>
         <pubTime>2016-09-14T05:46:52.000Z</pubTime>
         
         <tag>hexo</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>建站</tag>
          
          
            
@@ -165,13 +403,17 @@
     
   <url>
     <loc>https://chihysoa.github.io/2016/09/14/blog/sitemap/</loc>
-    <lastmod>2016-09-14T05:57:06.575Z</lastmod>
+    <lastmod>2016-09-23T09:34:06.278Z</lastmod>
     <data>
         <display>
         <title>hexo生成sitemap站点地图</title>
         <pubTime>2016-09-14T05:46:52.000Z</pubTime>
         
         <tag>hexo</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>建站</tag>
          
          
            
@@ -184,19 +426,21 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/10/node/linux-install/</loc>
-    <lastmod>2016-09-14T04:34:03.907Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/19/markdown/index/</loc>
+    <lastmod>2016-09-23T09:33:17.495Z</lastmod>
     <data>
         <display>
-        <title>linux下安装nodejs</title>
-        <pubTime>2016-09-10T06:24:23.000Z</pubTime>
+        <title>Markdown语法</title>
+        <pubTime>2016-09-19T07:54:52.000Z</pubTime>
         
-        <tag>node</tag>
+        <tag>工具</tag>
+         
+        <tag>Markdown</tag>
          
          
            
              
-              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
+              <breadCrumb title="Markdown" url="https://chihysoa.github.io/categories/Markdown/"/>
           
         </display>
     </data>
@@ -204,12 +448,76 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/09/12/js/cookie/</loc>
-    <lastmod>2016-09-14T04:32:15.025Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/09/19/git/Unstaged/</loc>
+    <lastmod>2016-09-23T09:33:11.371Z</lastmod>
     <data>
         <display>
-        <title>javascript操作cookie</title>
-        <pubTime>2016-09-12T11:03:32.000Z</pubTime>
+        <title>Git:Unstaged changes after reset</title>
+        <pubTime>2016-09-19T03:52:52.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/07/20/git/git/</loc>
+    <lastmod>2016-09-23T09:33:05.324Z</lastmod>
+    <data>
+        <display>
+        <title>项目版本管理 - Git基本操作</title>
+        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/23/css/bg-gradient/</loc>
+    <lastmod>2016-09-23T09:27:11.408Z</lastmod>
+    <data>
+        <display>
+        <title>CSS背景渐变</title>
+        <pubTime>2016-09-23T09:24:52.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="https://chihysoa.github.io/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/21/js/patchEvent/</loc>
+    <lastmod>2016-09-22T04:55:05.378Z</lastmod>
+    <data>
+        <display>
+        <title>js模拟事件触发</title>
+        <pubTime>2016-09-21T11:03:32.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -222,6 +530,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>https://chihysoa.github.io/2016/07/21/fe/fe/</loc>
@@ -244,152 +553,12 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/08/13/node/cli/</loc>
-    <lastmod>2016-09-14T04:28:24.278Z</lastmod>
-    <data>
-        <display>
-        <title>基于nodejs开发自己的cli</title>
-        <pubTime>2016-08-13T15:24:23.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="https://chihysoa.github.io/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/05/js/es6_1/</loc>
-    <lastmod>2016-09-14T04:27:55.246Z</lastmod>
-    <data>
-        <display>
-        <title>es6入门--基本扩展(一)</title>
-        <pubTime>2016-09-05T06:27:32.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/05/js/es6_2/</loc>
-    <lastmod>2016-09-14T04:26:32.048Z</lastmod>
-    <data>
-        <display>
-        <title>es6入门--基本扩展(二)</title>
-        <pubTime>2016-09-05T06:59:22.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_3/</loc>
-    <lastmod>2016-09-14T04:24:29.703Z</lastmod>
-    <data>
-        <display>
-        <title>es6入门--集合</title>
-        <pubTime>2016-09-06T12:27:24.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_4/</loc>
-    <lastmod>2016-09-14T04:23:30.308Z</lastmod>
-    <data>
-        <display>
-        <title>es6入门--模块化</title>
-        <pubTime>2016-09-06T14:27:32.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_5/</loc>
-    <lastmod>2016-09-14T04:22:45.075Z</lastmod>
-    <data>
-        <display>
-        <title>es6入门--class</title>
-        <pubTime>2016-09-06T14:27:32.000Z</pubTime>
-        
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://chihysoa.github.io/2016/08/22/js/prototype/</loc>
     <lastmod>2016-09-14T04:22:30.561Z</lastmod>
     <data>
         <display>
         <title>javascript原型和原型链</title>
         <pubTime>2016-08-22T04:03:34.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/08/24/js/extends/</loc>
-    <lastmod>2016-09-14T04:21:56.200Z</lastmod>
-    <data>
-        <display>
-        <title>javascript继承</title>
-        <pubTime>2016-08-24T05:28:38.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -437,46 +606,6 @@
            
              
               <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/10/linux/path/</loc>
-    <lastmod>2016-09-14T02:43:07.000Z</lastmod>
-    <data>
-        <display>
-        <title>linux设置环境变量</title>
-        <pubTime>2016-09-10T07:22:23.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://chihysoa.github.io/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/07/21/fe/fe-spa/</loc>
-    <lastmod>2016-09-14T02:25:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>前后端分离方案 - spa</title>
-        <pubTime>2016-07-21T14:28:38.000Z</pubTime>
-        
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://chihysoa.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>

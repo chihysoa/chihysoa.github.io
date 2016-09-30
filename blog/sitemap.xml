@@ -2,79 +2,191 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chihysoa.github.io/2016/09/26/js/closure/</loc>
+    
+    <lastmod>2016-09-30T05:56:05.781Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/08/24/js/extends/</loc>
+    
+    <lastmod>2016-09-26T05:45:31.976Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/tags/index.html</loc>
+    
+    <lastmod>2016-09-26T05:40:33.056Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/categories/index.html</loc>
+    
+    <lastmod>2016-09-26T05:40:33.053Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chihysoa.github.io/2016/09/20/node/socket/</loc>
     
-    <lastmod>2016-09-20T05:27:39.670Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/08/03/fe/fe-node/</loc>
-    
-    <lastmod>2016-09-20T05:20:07.472Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/19/tool/redis/window/</loc>
-    
-    <lastmod>2016-09-19T09:53:55.148Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/19/tool/git/Unstaged/</loc>
-    
-    <lastmod>2016-09-19T07:52:40.992Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/07/20/tool/git/git/</loc>
-    
-    <lastmod>2016-09-19T07:52:37.906Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/18/node/image/</loc>
-    
-    <lastmod>2016-09-19T03:50:57.328Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/17/linux/addfont/</loc>
-    
-    <lastmod>2016-09-19T03:50:57.327Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/14/blog/init/</loc>
-    
-    <lastmod>2016-09-19T03:50:57.326Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/14/blog/sitemap/</loc>
-    
-    <lastmod>2016-09-14T05:57:06.575Z</lastmod>
+    <lastmod>2016-09-23T09:37:03.404Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chihysoa.github.io/2016/09/10/node/linux-install/</loc>
     
-    <lastmod>2016-09-14T04:34:03.907Z</lastmod>
+    <lastmod>2016-09-23T09:36:51.454Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/18/node/image/</loc>
+    
+    <lastmod>2016-09-23T09:36:40.663Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/08/13/node/cli/</loc>
+    
+    <lastmod>2016-09-23T09:36:21.883Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/07/21/fe/fe-spa/</loc>
+    
+    <lastmod>2016-09-23T09:36:11.059Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/08/03/fe/fe-node/</loc>
+    
+    <lastmod>2016-09-23T09:36:05.213Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/17/linux/addfont/</loc>
+    
+    <lastmod>2016-09-23T09:35:51.396Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/10/linux/path/</loc>
+    
+    <lastmod>2016-09-23T09:35:46.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/19/redis/window/</loc>
+    
+    <lastmod>2016-09-23T09:35:37.550Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_5/</loc>
+    
+    <lastmod>2016-09-23T09:35:03.333Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_4/</loc>
+    
+    <lastmod>2016-09-23T09:34:58.866Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/06/js/es6_3/</loc>
+    
+    <lastmod>2016-09-23T09:34:54.193Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/05/js/es6_2/</loc>
+    
+    <lastmod>2016-09-23T09:34:43.988Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/05/js/es6_1/</loc>
+    
+    <lastmod>2016-09-23T09:34:31.468Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chihysoa.github.io/2016/09/12/js/cookie/</loc>
     
-    <lastmod>2016-09-14T04:32:15.025Z</lastmod>
+    <lastmod>2016-09-23T09:34:23.132Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/14/blog/init/</loc>
+    
+    <lastmod>2016-09-23T09:34:10.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/14/blog/sitemap/</loc>
+    
+    <lastmod>2016-09-23T09:34:06.278Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/19/markdown/index/</loc>
+    
+    <lastmod>2016-09-23T09:33:17.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/19/git/Unstaged/</loc>
+    
+    <lastmod>2016-09-23T09:33:11.371Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/07/20/git/git/</loc>
+    
+    <lastmod>2016-09-23T09:33:05.324Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/23/css/bg-gradient/</loc>
+    
+    <lastmod>2016-09-23T09:27:11.408Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/2016/09/21/js/patchEvent/</loc>
+    
+    <lastmod>2016-09-22T04:55:05.378Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/about/index.html</loc>
+    
+    <lastmod>2016-09-18T23:18:54.000Z</lastmod>
     
   </url>
   
@@ -86,58 +198,9 @@
   </url>
   
   <url>
-    <loc>https://chihysoa.github.io/2016/08/13/node/cli/</loc>
-    
-    <lastmod>2016-09-14T04:28:24.278Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/05/js/es6_1/</loc>
-    
-    <lastmod>2016-09-14T04:27:55.246Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/05/js/es6_2/</loc>
-    
-    <lastmod>2016-09-14T04:26:32.048Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_3/</loc>
-    
-    <lastmod>2016-09-14T04:24:29.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_4/</loc>
-    
-    <lastmod>2016-09-14T04:23:30.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/06/js/es6_5/</loc>
-    
-    <lastmod>2016-09-14T04:22:45.075Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chihysoa.github.io/2016/08/22/js/prototype/</loc>
     
     <lastmod>2016-09-14T04:22:30.561Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/08/24/js/extends/</loc>
-    
-    <lastmod>2016-09-14T04:21:56.200Z</lastmod>
     
   </url>
   
@@ -152,20 +215,6 @@
     <loc>https://chihysoa.github.io/2016/09/14/js/var/</loc>
     
     <lastmod>2016-09-14T04:20:00.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/09/10/linux/path/</loc>
-    
-    <lastmod>2016-09-14T02:43:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/2016/07/21/fe/fe-spa/</loc>
-    
-    <lastmod>2016-09-14T02:25:51.000Z</lastmod>
     
   </url>
   
