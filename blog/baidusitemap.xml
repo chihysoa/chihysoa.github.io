@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/10/14/js/array/</loc>
+    <lastmod>2016-10-13T12:26:25.612Z</lastmod>
+    <data>
+        <display>
+        <title>javascript数组操作</title>
+        <pubTime>2016-10-14T05:49:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/09/29/linux/ssh/</loc>
     <lastmod>2016-09-30T06:52:25.509Z</lastmod>
     <data>
@@ -141,9 +161,9 @@
         <title>nodejs图片尺寸压缩</title>
         <pubTime>2016-09-18T14:24:23.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>node</tag>
+         
+        <tag>javascript</tag>
          
         <tag>image</tag>
          
@@ -165,9 +185,9 @@
         <title>基于nodejs开发自己的cli</title>
         <pubTime>2016-08-13T15:24:23.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>node</tag>
+         
+        <tag>javascript</tag>
          
          
            
@@ -297,9 +317,9 @@
         <title>es6入门--class</title>
         <pubTime>2016-09-06T14:27:32.000Z</pubTime>
         
-        <tag>es6</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
@@ -319,9 +339,9 @@
         <title>es6入门--模块化</title>
         <pubTime>2016-09-06T14:27:32.000Z</pubTime>
         
-        <tag>es6</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
@@ -341,9 +361,9 @@
         <title>es6入门--集合</title>
         <pubTime>2016-09-06T12:27:24.000Z</pubTime>
         
-        <tag>es6</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
@@ -363,9 +383,9 @@
         <title>es6入门--基本扩展(二)</title>
         <pubTime>2016-09-05T06:59:22.000Z</pubTime>
         
-        <tag>es6</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
@@ -385,9 +405,9 @@
         <title>es6入门--基本扩展(一)</title>
         <pubTime>2016-09-05T06:27:32.000Z</pubTime>
         
-        <tag>es6</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>es6</tag>
          
          
            
