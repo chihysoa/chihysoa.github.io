@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/11/10/android/gradle/</loc>
+    <lastmod>2016-11-23T09:29:03.306Z</lastmod>
+    <data>
+        <display>
+        <title>android gradle 慢的问题</title>
+        <pubTime>2016-11-10T05:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/07/20/git/git/</loc>
+    <lastmod>2016-11-08T07:28:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>项目版本管理 - Git基本操作</title>
+        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/10/14/js/array/</loc>
     <lastmod>2016-10-13T12:28:40.564Z</lastmod>
     <data>
@@ -518,28 +560,6 @@
         <display>
         <title>Git:Unstaged changes after reset</title>
         <pubTime>2016-09-19T03:52:52.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="https://chihysoa.github.io/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/07/20/git/git/</loc>
-    <lastmod>2016-09-23T09:33:05.324Z</lastmod>
-    <data>
-        <display>
-        <title>项目版本管理 - Git基本操作</title>
-        <pubTime>2016-07-20T08:32:52.000Z</pubTime>
         
         <tag>git</tag>
          
