@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/11/05/android/error/</loc>
+    <lastmod>2016-11-24T09:24:44.721Z</lastmod>
+    <data>
+        <display>
+        <title>android studio 一些坑</title>
+        <pubTime>2016-11-05T04:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/15/android/proxy/</loc>
+    <lastmod>2016-11-24T09:23:33.345Z</lastmod>
+    <data>
+        <display>
+        <title>android sdk镜像使用</title>
+        <pubTime>2016-11-15T04:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/11/10/android/gradle/</loc>
     <lastmod>2016-11-23T09:43:22.000Z</lastmod>
     <data>
@@ -203,9 +243,9 @@
         <title>nodejs图片尺寸压缩</title>
         <pubTime>2016-09-18T14:24:23.000Z</pubTime>
         
-        <tag>node</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>node</tag>
          
         <tag>image</tag>
          
@@ -227,9 +267,9 @@
         <title>基于nodejs开发自己的cli</title>
         <pubTime>2016-08-13T15:24:23.000Z</pubTime>
         
-        <tag>node</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>node</tag>
          
          
            
