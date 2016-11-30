@@ -4,14 +4,36 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/11/24/nginx/gzip/</loc>
+    <lastmod>2016-11-30T11:37:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>nginx开启gzip压缩功能</title>
+        <pubTime>2016-11-24T09:46:52.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="nginx" url="https://chihysoa.github.io/categories/nginx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/11/22/chrome/request/</loc>
-    <lastmod>2016-11-25T09:10:30.777Z</lastmod>
+    <lastmod>2016-11-30T11:29:01.000Z</lastmod>
     <data>
         <display>
         <title>chrome插件开发网络请求处理</title>
         <pubTime>2016-11-22T09:46:52.000Z</pubTime>
         
-        <tag>chrome，插件开发</tag>
+        <tag>chrome</tag>
+         
+        <tag>插件开发</tag>
          
          
            
@@ -24,11 +46,51 @@
 
     
   <url>
-    <loc>https://chihysoa.github.io/2016/11/05/android/error/</loc>
-    <lastmod>2016-11-24T09:24:44.721Z</lastmod>
+    <loc>https://chihysoa.github.io/2016/11/17/android/route/</loc>
+    <lastmod>2016-11-30T11:26:33.433Z</lastmod>
     <data>
         <display>
-        <title>android studio 一些坑</title>
+        <title>Android 设置屏幕旋转</title>
+        <pubTime>2016-11-17T12:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/25/android/permission/</loc>
+    <lastmod>2016-11-30T11:12:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 权限大全</title>
+        <pubTime>2016-11-25T11:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/05/android/error/</loc>
+    <lastmod>2016-11-30T11:07:59.802Z</lastmod>
+    <data>
+        <display>
+        <title>Android Studio 一些坑</title>
         <pubTime>2016-11-05T04:46:52.000Z</pubTime>
         
         <tag>android</tag>
@@ -45,10 +107,10 @@
     
   <url>
     <loc>https://chihysoa.github.io/2016/11/15/android/proxy/</loc>
-    <lastmod>2016-11-24T09:23:33.345Z</lastmod>
+    <lastmod>2016-11-30T11:07:55.205Z</lastmod>
     <data>
         <display>
-        <title>android sdk镜像使用</title>
+        <title>Android SDK镜像使用</title>
         <pubTime>2016-11-15T04:46:52.000Z</pubTime>
         
         <tag>android</tag>
@@ -65,10 +127,10 @@
     
   <url>
     <loc>https://chihysoa.github.io/2016/11/10/android/gradle/</loc>
-    <lastmod>2016-11-23T09:43:22.000Z</lastmod>
+    <lastmod>2016-11-30T11:07:48.100Z</lastmod>
     <data>
         <display>
-        <title>android studio gradle building慢的问题</title>
+        <title>Android Studio Gradle building慢的问题</title>
         <pubTime>2016-11-10T05:46:52.000Z</pubTime>
         
         <tag>android</tag>
@@ -263,9 +325,9 @@
         <title>nodejs图片尺寸压缩</title>
         <pubTime>2016-09-18T14:24:23.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>node</tag>
+         
+        <tag>javascript</tag>
          
         <tag>image</tag>
          
@@ -287,9 +349,9 @@
         <title>基于nodejs开发自己的cli</title>
         <pubTime>2016-08-13T15:24:23.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>node</tag>
+         
+        <tag>javascript</tag>
          
          
            
