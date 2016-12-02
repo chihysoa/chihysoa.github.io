@@ -4,6 +4,72 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/10/24/firefox/manifest/</loc>
+    <lastmod>2016-12-02T11:10:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>firefox插件开发--manifest文件</title>
+        <pubTime>2016-10-24T06:46:52.000Z</pubTime>
+        
+        <tag>插件开发</tag>
+         
+        <tag>firefox</tag>
+         
+         
+           
+             
+              <breadCrumb title="firefox" url="https://chihysoa.github.io/categories/firefox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/10/07/chrome/plugin/</loc>
+    <lastmod>2016-12-02T11:00:35.795Z</lastmod>
+    <data>
+        <display>
+        <title>chrome插件开发</title>
+        <pubTime>2016-10-07T09:46:52.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>插件开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="chrome" url="https://chihysoa.github.io/categories/chrome/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/10/22/chrome/manifest/</loc>
+    <lastmod>2016-12-02T10:49:38.193Z</lastmod>
+    <data>
+        <display>
+        <title>chrome插件开发--manifest文件</title>
+        <pubTime>2016-10-22T09:46:52.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>插件开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="chrome" url="https://chihysoa.github.io/categories/chrome/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/11/24/nginx/gzip/</loc>
     <lastmod>2016-11-30T11:37:21.000Z</lastmod>
     <data>
