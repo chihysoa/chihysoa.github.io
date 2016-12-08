@@ -4,6 +4,138 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/2016/12/02/android/openapp/</loc>
+    <lastmod>2016-12-08T08:08:16.818Z</lastmod>
+    <data>
+        <display>
+        <title>android打开第三方应用</title>
+        <pubTime>2016-12-02T03:49:38.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/17/android/route/</loc>
+    <lastmod>2016-12-08T07:50:05.161Z</lastmod>
+    <data>
+        <display>
+        <title>Android 设置屏幕旋转</title>
+        <pubTime>2016-11-17T12:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/25/android/permission/</loc>
+    <lastmod>2016-12-08T07:50:01.072Z</lastmod>
+    <data>
+        <display>
+        <title>Android 权限大全</title>
+        <pubTime>2016-11-25T11:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/15/android/proxy/</loc>
+    <lastmod>2016-12-08T07:49:59.045Z</lastmod>
+    <data>
+        <display>
+        <title>Android SDK镜像使用</title>
+        <pubTime>2016-11-15T04:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/10/android/gradle/</loc>
+    <lastmod>2016-12-08T07:49:49.800Z</lastmod>
+    <data>
+        <display>
+        <title>Android Studio Gradle building慢的问题</title>
+        <pubTime>2016-11-10T05:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/2016/11/05/android/error/</loc>
+    <lastmod>2016-12-08T07:49:44.634Z</lastmod>
+    <data>
+        <display>
+        <title>Android Studio 一些坑</title>
+        <pubTime>2016-11-05T04:46:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/2016/12/08/m/protocol/</loc>
     <lastmod>2016-12-08T03:59:15.841Z</lastmod>
     <data>
@@ -125,106 +257,6 @@
            
              
               <breadCrumb title="chrome" url="https://chihysoa.github.io/categories/chrome/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/11/17/android/route/</loc>
-    <lastmod>2016-11-30T11:26:33.433Z</lastmod>
-    <data>
-        <display>
-        <title>Android 设置屏幕旋转</title>
-        <pubTime>2016-11-17T12:46:52.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/11/25/android/permission/</loc>
-    <lastmod>2016-11-30T11:12:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android 权限大全</title>
-        <pubTime>2016-11-25T11:46:52.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/11/05/android/error/</loc>
-    <lastmod>2016-11-30T11:07:59.802Z</lastmod>
-    <data>
-        <display>
-        <title>Android Studio 一些坑</title>
-        <pubTime>2016-11-05T04:46:52.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/11/15/android/proxy/</loc>
-    <lastmod>2016-11-30T11:07:55.205Z</lastmod>
-    <data>
-        <display>
-        <title>Android SDK镜像使用</title>
-        <pubTime>2016-11-15T04:46:52.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/2016/11/10/android/gradle/</loc>
-    <lastmod>2016-11-30T11:07:48.100Z</lastmod>
-    <data>
-        <display>
-        <title>Android Studio Gradle building慢的问题</title>
-        <pubTime>2016-11-10T05:46:52.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://chihysoa.github.io/categories/android/"/>
           
         </display>
     </data>
