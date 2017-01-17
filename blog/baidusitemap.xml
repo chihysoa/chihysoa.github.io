@@ -4,6 +4,90 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/blog/2016/12/08/m/protocol/</loc>
+    <lastmod>2017-01-17T03:23:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>移动端web协议</title>
+        <pubTime>2016-12-08T03:49:38.000Z</pubTime>
+        
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="移动端" url="https://chihysoa.github.io/blog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/blog/2017/01/11/git/binary/</loc>
+    <lastmod>2017-01-17T03:22:49.536Z</lastmod>
+    <data>
+        <display>
+        <title>Git解决二进制文件冲突</title>
+        <pubTime>2017-01-11T03:12:52.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://chihysoa.github.io/blog/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/blog/2016/11/08/js/func_f/</loc>
+    <lastmod>2017-01-12T05:58:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>js函数前面的加号，叹号的作用</title>
+        <pubTime>2016-11-08T05:49:38.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="https://chihysoa.github.io/blog/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/blog/2017/01/10/android/scheme/</loc>
+    <lastmod>2017-01-11T07:35:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android 添加scheme</title>
+        <pubTime>2017-01-10T07:12:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://chihysoa.github.io/blog/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/blog/2016/12/02/android/openapp/</loc>
     <lastmod>2016-12-08T08:08:16.818Z</lastmod>
     <data>
@@ -129,26 +213,6 @@
            
              
               <breadCrumb title="android" url="https://chihysoa.github.io/blog/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/blog/2016/12/08/m/protocol/</loc>
-    <lastmod>2016-12-08T03:59:15.841Z</lastmod>
-    <data>
-        <display>
-        <title>移动端web协议</title>
-        <pubTime>2016-12-08T03:49:38.000Z</pubTime>
-        
-        <tag>移动端</tag>
-         
-         
-           
-             
-              <breadCrumb title="移动端" url="https://chihysoa.github.io/blog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
           
         </display>
     </data>
