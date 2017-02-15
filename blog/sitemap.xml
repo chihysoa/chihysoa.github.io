@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chihysoa.github.io/blog/2017/02/15/db/linux_mysql_install/</loc>
+    
+    <lastmod>2017-02-15T02:59:36.408Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chihysoa.github.io/blog/2017/02/08/db/mysql/</loc>
     
-    <lastmod>2017-02-14T07:30:29.595Z</lastmod>
+    <lastmod>2017-02-15T02:24:02.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chihysoa.github.io/blog/2016/09/10/node/linux-install/</loc>
+    
+    <lastmod>2017-02-15T01:35:58.044Z</lastmod>
     
   </url>
   
@@ -201,13 +215,6 @@
     <loc>https://chihysoa.github.io/blog/2016/09/20/node/socket/</loc>
     
     <lastmod>2016-09-23T09:37:03.404Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chihysoa.github.io/blog/2016/09/10/node/linux-install/</loc>
-    
-    <lastmod>2016-09-23T09:36:51.454Z</lastmod>
     
   </url>
   

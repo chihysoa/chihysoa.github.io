@@ -4,19 +4,65 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/blog/2017/02/15/db/linux_mysql_install/</loc>
+    <lastmod>2017-02-15T02:59:36.408Z</lastmod>
+    <data>
+        <display>
+        <title>linux下安装mysql</title>
+        <pubTime>2017-02-15T03:49:38.000Z</pubTime>
+        
+        <tag>mysql</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="数据库" url="https://chihysoa.github.io/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/blog/2017/02/08/db/mysql/</loc>
-    <lastmod>2017-02-14T07:30:29.595Z</lastmod>
+    <lastmod>2017-02-15T02:24:02.158Z</lastmod>
     <data>
         <display>
         <title>window下硬盘版mysql安装</title>
         <pubTime>2017-02-08T03:49:38.000Z</pubTime>
         
-        <tag>移动端</tag>
+        <tag>mysql</tag>
+         
+        <tag>数据库</tag>
          
          
            
              
-              <breadCrumb title="移动端" url="https://chihysoa.github.io/blog/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+              <breadCrumb title="数据库" url="https://chihysoa.github.io/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chihysoa.github.io/blog/2016/09/10/node/linux-install/</loc>
+    <lastmod>2017-02-15T01:35:58.044Z</lastmod>
+    <data>
+        <display>
+        <title>linux下安装nodejs</title>
+        <pubTime>2016-09-10T06:24:23.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://chihysoa.github.io/blog/categories/node/"/>
           
         </display>
     </data>
@@ -574,28 +620,6 @@
         <tag>node</tag>
          
         <tag>网络</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="https://chihysoa.github.io/blog/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://chihysoa.github.io/blog/2016/09/10/node/linux-install/</loc>
-    <lastmod>2016-09-23T09:36:51.454Z</lastmod>
-    <data>
-        <display>
-        <title>linux下安装nodejs</title>
-        <pubTime>2016-09-10T06:24:23.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>linux</tag>
          
          
            
