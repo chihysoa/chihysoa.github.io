@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://chihysoa.github.io/blog/2017/02/13/nginx/limit/</loc>
+    <lastmod>2017-02-17T07:03:38.330Z</lastmod>
+    <data>
+        <display>
+        <title>nginx请求大小限制(request entity too large 413)</title>
+        <pubTime>2017-02-13T09:46:52.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="nginx" url="https://chihysoa.github.io/blog/categories/nginx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://chihysoa.github.io/blog/2017/02/16/js/html5_drag/</loc>
     <lastmod>2017-02-17T04:02:52.811Z</lastmod>
     <data>
